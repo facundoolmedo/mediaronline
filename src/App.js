@@ -1,20 +1,27 @@
-import React from 'react';
+import React from "react";
 
-/* import Contador from './components/Contador'
-import Jsx from './components/Jsx'
-import Lista from './components/Lista' */
+import { ThemeProvider } from "@material-ui/core/styles";
+import theme from "./TemaConfig";
+import { Contenedor } from "./components/Contenedor";
+//import { Contenedor } from "./components/ContenedorDrawerPermanente.jsx";
+// import CssBaseline from "@material-ui/core/CssBaseline";
 
-import Formulario from './components/Formulario'
-import Hform from './components/HookForm'
+theme.typography.h1 = {
+  fontSize: "3.4rem",
+  "@media (min-width:600px)": {
+    fontSize: "5rem",
+  },
+  [theme.breakpoints.up("md")]: {
+    fontSize: "6.8rem",
+  },
+};
 
 function App() {
   return (
-    <div className = 'container mt-5'>
-      <h2>Formulario de prueba</h2><br/><br/>
-      <Formulario/>
-      <br/><br/><br/>
-      <Hform/>
-    </div>
+    <ThemeProvider theme={theme}>
+      {/* <CssBaseline /> */}
+      <Contenedor />
+    </ThemeProvider>
   );
 }
 
