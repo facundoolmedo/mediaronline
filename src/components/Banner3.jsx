@@ -3,17 +3,17 @@ import { makeStyles, Typography, Box } from "@material-ui/core";
 
 const useStyle = makeStyles({
   banner: {
-    height: "auto",
+    height: 300,
     maxWidth: "100%",
-    backgroundColor: "#DEDEDE",
+    backgroundColor: "#FFFFFF",
   },
   tittle1: {
     marginLeft: 0,
-    paddingTop: 0,
+    paddingTop: 50,
   },
   text1: {
     marginLeft: 0,
-    marginTop: 0,
+    marginTop: 30,
   },
 });
 
@@ -22,13 +22,26 @@ const Banner2 = () => {
 
   return (
     <Fragment>
-      <Box className={classes.banner} id="banner2" textAlign="center" py={9}>
+      <Box
+        className={classes.banner}
+        id="banner2"
+        m={2}
+        p={2}
+        textAlign="center"
+      >
         <Typography
-          variant="h3"
+          variant="h2"
+          color="textPrimary"
+          className={classes.tittle1}
+        >
+          Quienes somos?
+        </Typography>
+        <Typography
+          variant="h4"
           color="textSecondary"
           className={classes.text1}
         >
-          Negociación, Mediación y Formación en Resolución de Conflictos
+          Centro de Mediacion y Formación en Resolución de Conflictos
         </Typography>
       </Box>
     </Fragment>

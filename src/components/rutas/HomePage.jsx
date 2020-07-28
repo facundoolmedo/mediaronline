@@ -5,6 +5,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-scroll";
 import Banner from "../Banner.jsx";
 import Banner2 from "../Banner2.jsx";
+import Banner3 from "../Banner3.jsx";
 
 const useStyle = makeStyles({
   root: {
@@ -32,6 +33,7 @@ const Home = () => {
         <Banner />
       </Container>
       <Banner2 />
+      <Banner3 />
       <Link
         activeClass="active"
         to="section1"

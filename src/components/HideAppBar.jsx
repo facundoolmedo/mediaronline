@@ -55,6 +55,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
+    color: "#ffc107",
     cursor: "pointer",
   },
   offset: theme.mixins.toolbar,
@@ -95,11 +96,11 @@ export default function HideAppBar(props) {
             </Hidden>
 
             <Typography
-              variant="h6"
+              variant="h4"
               className={classes.title}
               onClick={() => scroll.scrollToTop()}
             >
-              Mediar Online
+              M & F
             </Typography>
 
             <Hidden xsDown>

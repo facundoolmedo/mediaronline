@@ -1,25 +1,26 @@
 import React, { Fragment } from "react";
-import { makeStyles, Typography, Button } from "@material-ui/core";
-import Image from "../static/picture3.jpg";
+import { makeStyles, Typography, Button, Box } from "@material-ui/core";
+import Image from "../static/picture7.jpg";
 
 import { Link } from "react-scroll";
 
 const useStyle = makeStyles({
   banner: {
-    height: 680,
+    height: "auto",
     maxWidth: "100%",
     backgroundImage: `url(${Image})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
+    textAlign: "center",
   },
   text1: {
-    marginLeft: 60,
-    paddingTop: 240,
+    marginLeft: 0,
+    paddingTop: 150,
   },
   button: {
-    marginLeft: 70,
-    marginTop: 30,
+    marginLeft: 0,
+    marginTop: 70,
   },
 });
 
@@ -28,9 +29,9 @@ const Banner = () => {
 
   return (
     <Fragment>
-      <div className={classes.banner}>
+      <Box className={classes.banner} py={7}>
         <Typography variant="h1" color="secondary" className={classes.text1}>
-          Bienvenido.
+          Especialistas en negociación
         </Typography>
 
         <Link
@@ -42,15 +43,15 @@ const Banner = () => {
           duration={1700}
         >
           <Button
-            variant="contained"
+            variant="outlined"
             size="large"
-            color="default"
+            color="secondary"
             className={classes.button}
           >
             Comenzar
           </Button>
         </Link>
-      </div>
+      </Box>
     </Fragment>
   );
 };
