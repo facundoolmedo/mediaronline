@@ -16,7 +16,6 @@ const useStyle = makeStyles({
   },
   text1: {
     marginLeft: 0,
-    paddingTop: 150,
   },
   button: {
     marginLeft: 0,
@@ -29,7 +28,7 @@ const Banner = () => {
 
   return (
     <Fragment>
-      <Box className={classes.banner} py={7}>
+      <Box className={classes.banner} pb={7} pt={16}>
         <Typography variant="h1" color="secondary" className={classes.text1}>
           Especialistas en negociación
         </Typography>

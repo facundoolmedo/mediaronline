@@ -12,7 +12,7 @@ theme.typography.h1 = {
     fontSize: "5rem",
   },
   [theme.breakpoints.up("md")]: {
-    fontSize: "6.8rem",
+    fontSize: "5.7rem",
   },
 };
 
