@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+
 import { makeStyles, Typography, Button, Box } from "@material-ui/core";
 import Image from "../static/picture7.jpg";
 
@@ -12,14 +13,16 @@ const useStyle = makeStyles({
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
+    backdropFilter: "true",
     textAlign: "center",
   },
-  text1: {
-    marginLeft: 0,
+  bg: {
+    backgroundColor: "#000000",
+    opacity: 0.6,
   },
   button: {
-    marginLeft: 0,
-    marginTop: 70,
+    marginTop: 40,
+    borderWidth: 3,
   },
 });
 
@@ -28,10 +31,12 @@ const Banner = () => {
 
   return (
     <Fragment>
-      <Box className={classes.banner} pb={7} pt={20}>
-        <Typography variant="h1" color="secondary" className={classes.text1}>
+      <Box className={classes.banner} pb={7} pt={18} px={5}>
+        {/* <Box p={2} m={2}> */}
+        <Typography variant="h1" color="secondary">
           Especialistas en negociación
         </Typography>
+        {/* </Box> */}
 
         <Link
           activeClass="active"
@@ -43,8 +48,8 @@ const Banner = () => {
         >
           <Button
             variant="outlined"
-            size="large"
             color="secondary"
+            size="large"
             className={classes.button}
           >
             Comenzar

@@ -61,7 +61,6 @@ const useStyles = makeStyles((theme) => ({
   offset: theme.mixins.toolbar,
   appBar: {
     width: `calc(100% - ${0}px)`,
-    marginLeft: 0,
     opacity: 0.7,
     // background: "transparent",
     // boxShadow: "none",

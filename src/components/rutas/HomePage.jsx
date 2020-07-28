@@ -6,6 +6,7 @@ import { Link } from "react-scroll";
 import Banner from "../Banner.jsx";
 import Banner2 from "../Banner2.jsx";
 import Banner3 from "../Banner3.jsx";
+import Banner4 from "../Banner4.jsx";
 
 const useStyle = makeStyles({
   root: {
@@ -34,6 +35,7 @@ const Home = () => {
       </Container>
       <Banner2 />
       <Banner3 />
+      <Banner4 />
       <Link
         activeClass="active"
         to="section1"

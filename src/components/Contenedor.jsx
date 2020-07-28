@@ -44,6 +44,9 @@ const estilos = makeStyles((theme) => ({
   mt: {
     marginTop: 20,
   },
+  bg: {
+    backgroundColor: "#DEDEDE",
+  },
 }));
 
 export const Contenedor = (props) => {

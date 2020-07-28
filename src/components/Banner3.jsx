@@ -3,21 +3,18 @@ import { makeStyles, Typography, Box } from "@material-ui/core";
 
 const useStyle = makeStyles({
   banner: {
-    height: 300,
+    height: "auto",
     maxWidth: "100%",
     backgroundColor: "#FFFFFF",
   },
-  tittle1: {
-    marginLeft: 0,
-    paddingTop: 50,
-  },
+  tittle1: {},
   text1: {
     marginLeft: 0,
     marginTop: 30,
   },
 });
 
-const Banner2 = () => {
+const Banner3 = () => {
   const classes = useStyle();
 
   return (
@@ -48,4 +45,4 @@ const Banner2 = () => {
   );
 };
 
-export default Banner2;
+export default Banner3;

@@ -22,9 +22,9 @@ const Banner2 = () => {
 
   return (
     <Fragment>
-      <Box className={classes.banner} id="banner2" textAlign="center" py={9}>
+      <Box className={classes.banner} id="banner2" textAlign="center" py={4}>
         <Typography
-          variant="h3"
+          variant="h4"
           color="textSecondary"
           className={classes.text1}
         >
