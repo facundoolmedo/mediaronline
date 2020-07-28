@@ -28,7 +28,7 @@ const Banner = () => {
 
   return (
     <Fragment>
-      <Box className={classes.banner} pb={7} pt={16}>
+      <Box className={classes.banner} pb={7} pt={20}>
         <Typography variant="h1" color="secondary" className={classes.text1}>
           Especialistas en negociación
         </Typography>
