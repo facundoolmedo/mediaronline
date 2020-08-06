@@ -51,6 +51,15 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  firsButton:{
+    marginLeft: theme.spacing(4),
+    marginRight: theme.spacing(2),
+    height: 70,
+    paddingTop: "20px",
+    paddingBottom: "20px",
+    paddingLeft: 30,
+    paddingRight: 30,
+  },
   menuButton: {
     marginRight: theme.spacing(2),
     height: 70,
@@ -94,7 +103,7 @@ export default function HideAppBar(props) {
       <HideOnScroll {...props}>
         <AppBar position="fixed" className={classes.appBar} color="primary">
           <Toolbar>
-            <Hidden smUp>
+            <Hidden mdUp>
               <IconButton
                 edge="start"
                 className={classes.menuButton}
@@ -105,7 +114,6 @@ export default function HideAppBar(props) {
                 <MenuIcon />
               </IconButton>
             </Hidden>
-
             <Typography
               variant="body1"
               className={classes.title}
@@ -118,13 +126,13 @@ export default function HideAppBar(props) {
                 onClick={() => scroll.scrollToTop()}
               />
             </Typography>
-
-            <Hidden xsDown>
+            
+            <Hidden smDown>
               <Button
                 href="/"
                 color="primary"
                 size="large"
-                className={classes.menuButton}
+                className={classes.firsButton}
               >
                 Inicio
               </Button>

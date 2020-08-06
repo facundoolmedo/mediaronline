@@ -65,7 +65,7 @@ export const Contenedor = (props) => {
       <Container maxWidth="xl" className={classes.bar}>
         <HideAppBar accionAbrir={accionAbrir} />
         </Container>
-      <Hidden smUp>
+      <Hidden mdUp>
         <Drawer
           classes={{
             paper: classes.drawerPaper,
