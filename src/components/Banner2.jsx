@@ -26,6 +26,7 @@ const Banner2 = () => {
         top={-40}
         mx={10}
         py={10}
+        boxShadow={20}
       >
         <Typography
           variant="h4"

@@ -5,8 +5,8 @@ import { makeStyles } from "@material-ui/core/styles";
 // import { Link } from "react-scroll";
 import Banner from "../Banner.jsx";
 import Banner2 from "../Banner2.jsx";
-// import Banner3 from "../Banner3.jsx";
-// import Banner4 from "../Banner4.jsx";
+import Banner3 from "../Banner3.jsx";
+import Banner4 from "../Banner4.jsx";
 
 const useStyle = makeStyles({
   root: {
@@ -34,6 +34,8 @@ const Home = () => {
         <Banner titulo="Centro de Mediación y Formación en Resolución de Conflictos" />
 
         <Banner2 />
+        <Banner3 />
+        <Banner4 />
         {/* <section id="section1">
           <Button variant="contained" color="secondary">
             Scroll to Top

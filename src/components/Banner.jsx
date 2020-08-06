@@ -18,7 +18,7 @@ const useStyle = makeStyles({
   },
   titulo: {
     width: "auto",
-    margin: 20,
+    margin: 30,
     backgroundColor: "rgba(3, 3, 3, 0.4)",
     // backgroundColor:"#333333",
     maxWidth: 600,
@@ -33,11 +33,11 @@ const Banner = (props) => {
     <Fragment>
       <Box
         className={classes.banner}
-        pb={12}
+        pb={15}
         pt={25}
         px={5}
         display="flex"
-        justifyContent="flex-end"
+        justifyContent="flex-start"
       >
         <Box className={classes.titulo}>
           <Typography variant="h4" color="secondary">
