@@ -5,7 +5,8 @@ import React, { Fragment } from "react";
 // import { makeStyles } from "@material-ui/core";
 
 //Custom Components
-import Banner5 from "../Banner5.jsx";
+// import Banner5 from "../Banner5.jsx";
+import Banner4 from "../Banner4.jsx";
 
 // FUNCTIONS
 // const useStyle = makeStyles({
@@ -20,7 +21,7 @@ const Cursos = (props) => {
 
   return (
     <Fragment>
-      <Banner5 titulo="Cursos" />
+      <Banner4 titulo="Cursos" />
     </Fragment>
   );
 };

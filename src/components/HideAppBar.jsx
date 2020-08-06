@@ -73,7 +73,8 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 20,
   },
   logButton: {
-    height: 50,
+    height: "auto",
+    marginLeft: 20,
     paddingTop: "20px",
     paddingBottom: "20px",
   },
