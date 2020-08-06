@@ -1,22 +1,27 @@
-import React from "react";
-import Typography from "@material-ui/core/Typography";
-import makeStyles from "@material-ui/styles/makeStyles";
+import React, { Fragment } from "react";
 
-const useStyle = makeStyles({
-  root: {
-    marginTop: 30,
-  },
-});
+// MaterialUI Staff
+// import Typography from "@material-ui/core/Typography";
+// import { makeStyles } from "@material-ui/core";
 
-const Cursos = () => {
-  const classes = useStyle();
+//Custom Components
+import Banner5 from "../Banner5.jsx";
+
+// FUNCTIONS
+// const useStyle = makeStyles({
+//   root: {
+//     marginTop: 30,
+//   },
+// });
+
+// MAIN
+const Cursos = (props) => {
+  // const classes = useStyle(props);
 
   return (
-    <div>
-      <Typography variant="h2" color="initial" className={classes.root}>
-        Listado de Cursos Online
-      </Typography>
-    </div>
+    <Fragment>
+      <Banner5 titulo="Cursos" />
+    </Fragment>
   );
 };
 

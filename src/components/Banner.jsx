@@ -1,9 +1,8 @@
 import React, { Fragment } from "react";
 
-import { makeStyles, Typography, Button, Box } from "@material-ui/core";
-import Image from "../static/picture7.jpg";
-
-import { Link } from "react-scroll";
+import { makeStyles, Box, Typography } from "@material-ui/core";
+import Image from "../static/picture20.jpeg";
+// import { Link } from "react-scroll";
 
 const useStyle = makeStyles({
   banner: {
@@ -13,49 +12,37 @@ const useStyle = makeStyles({
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
-    backdropFilter: "true",
+    // backgroundColor: "#266A64",
     textAlign: "center",
   },
-  bg: {
-    backgroundColor: "#000000",
-    opacity: 0.6,
+  logo: {
+    color:"#ffc107",
   },
-  button: {
-    marginTop: 40,
-    borderWidth: 3,
+  titulo: {
+    width:"auto",
+    backgroundColor:'rgba(3, 3, 3, 0.5)',
+    // backgroundColor:"#333333",
+    maxWidth:600,
+    padding:30,
+    marginLeft:30,
   },
 });
 
-const Banner = () => {
+const Banner = (props) => {
   const classes = useStyle();
 
   return (
     <Fragment>
-      <Box className={classes.banner} pb={7} pt={18} px={5}>
-        {/* <Box p={2} m={2}> */}
-        <Typography variant="h1" color="secondary">
-          Especialistas en negociación
-        </Typography>
-        {/* </Box> */}
+      <Box className={classes.banner} pb={20} pt={25} px={5}>
+        {/* <Typography variant="h1" color="secondary">
+          {props.titulo}</Typography> */}
 
-        <Link
-          activeClass="active"
-          to="banner2"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={1700}
-        >
-          <Button
-            variant="outlined"
-            color="secondary"
-            size="large"
-            className={classes.button}
-          >
-            Comenzar
-          </Button>
-        </Link>
-      </Box>
+        <Box className={classes.titulo}>
+          <Typography variant="h4" color="secondary" >
+            {props.titulo}</Typography>
+        </Box>
+      </Box> 
+      
     </Fragment>
   );
 };

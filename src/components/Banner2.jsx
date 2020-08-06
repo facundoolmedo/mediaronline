@@ -5,7 +5,7 @@ const useStyle = makeStyles({
   banner: {
     height: "auto",
     maxWidth: "100%",
-    backgroundColor: "#DEDEDE",
+    backgroundColor: "#98D9D7",
   },
   tittle1: {
     marginLeft: 0,

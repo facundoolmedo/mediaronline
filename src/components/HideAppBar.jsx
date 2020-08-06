@@ -16,6 +16,7 @@ import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 // import { Hidden, Drawer } from "@material-ui/core";
 import { animateScroll as scroll } from "react-scroll";
+import logo from "../static/logov4.png";
 
 // import Lista from "./Lista.jsx";
 
@@ -52,20 +53,36 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
+    height:70,
+    paddingTop: "20px",
+    paddingBottom: "20px",
+    paddingLeft:30,
+    paddingRight:30,
+
+  },
+  logButton: {
+    marginRight: theme.spacing(3),
+    height:70,
+    paddingTop: "20px",
+    paddingBottom: "20px",
+
   },
   title: {
     flexGrow: 1,
-    color: "#ffc107",
-    cursor: "pointer",
+    paddingTop:5,
   },
   offset: theme.mixins.toolbar,
   appBar: {
-    width: `calc(100% - ${0}px)`,
-    opacity: 0.7,
-    // background: "transparent",
-    // boxShadow: "none",
-    backgroundColor: "#000000",
+    height: "auto",
+    paddingTop: "5px",
+    paddingBottom: "5px",
+    marginTop:15,
+    backgroundColor: "#FFFFFF",
   },
+  logo:{
+    width:250,
+    cursor: "pointer",
+  }
 }));
 
 export default function HideAppBar(props) {
@@ -76,36 +93,35 @@ export default function HideAppBar(props) {
       <CssBaseline />
       <HideOnScroll {...props}>
         <AppBar
-          position="fixed"
+          position="static"
           className={classes.appBar}
           color="primary"
-          elevation={5}
         >
           <Toolbar>
             <Hidden smUp>
               <IconButton
                 edge="start"
                 className={classes.menuButton}
-                color="inherit"
+                color="primary"
                 aria-label="menu"
                 onClick={() => props.accionAbrir()}
               >
                 <MenuIcon />
               </IconButton>
             </Hidden>
-
+            
             <Typography
-              variant="h4"
+              variant="body1"
               className={classes.title}
               onClick={() => scroll.scrollToTop()}
             >
-              M & F
+              <img className={classes.logo} src={logo} alt="logo" onClick={() => scroll.scrollToTop()}/>
             </Typography>
 
             <Hidden xsDown>
               <Button
                 href="/"
-                color="inherit"
+                color="primary"
                 size="large"
                 className={classes.menuButton}
               >
@@ -113,15 +129,15 @@ export default function HideAppBar(props) {
               </Button>
               <Button
                 href="/mediar"
-                color="inherit"
+                color="primary"
                 size="large"
                 className={classes.menuButton}
               >
-                Mediar
+                Mediación
               </Button>
               <Button
                 href="/cursos"
-                color="inherit"
+                color="primary"
                 size="large"
                 className={classes.menuButton}
               >
@@ -129,8 +145,9 @@ export default function HideAppBar(props) {
               </Button>
               <Button
                 href="/login"
-                color="inherit"
+                color="primary"
                 size="large"
+                className={classes.logButton}
                 variant="outlined"
               >
                 Login

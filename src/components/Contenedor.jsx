@@ -12,7 +12,7 @@ import Signup from "./rutas/SignupPage";
 import HideAppBar from "./HideAppBar.jsx";
 
 //Material Ui trash
-import { makeStyles } from "@material-ui/core";
+import { makeStyles, Container } from "@material-ui/core";
 
 import { Drawer } from "@material-ui/core";
 import Hidden from "@material-ui/core/Hidden";
@@ -39,13 +39,18 @@ const estilos = makeStyles((theme) => ({
   content: {
     flexGrow: 1,
     backgroundColor: theme.palette.background.default,
-    padding: theme.spacing(0),
   },
   mt: {
     marginTop: 20,
   },
   bg: {
     backgroundColor: "#DEDEDE",
+  },
+  cont: {
+    position: "relative",
+  },
+  bar: {
+    position: "absolute",
   },
 }));
 
@@ -56,8 +61,10 @@ export const Contenedor = (props) => {
     setAbrir(!abrir);
   };
   return (
-    <div>
-      <HideAppBar accionAbrir={accionAbrir} />
+    <div className={classes.cont}>
+      <Container maxWidth="xl" className={classes.bar}>
+        <HideAppBar accionAbrir={accionAbrir} />
+        </Container>
       <Hidden smUp>
         <Drawer
           classes={{
@@ -71,16 +78,14 @@ export const Contenedor = (props) => {
           <Lista />
         </Drawer>
       </Hidden>
-      <main className={classes.content}>
+      <main className={classes.content} >
         {/* <div className={classes.toolbar} /> */}
         <Router>
           <Switch>
             <Route path="/mediar">
-              <div className={classes.toolbar} />
               <Mediar />
             </Route>
             <Route path="/cursos">
-              <div className={classes.toolbar} />
               <Cursos />
             </Route>
             <Route path="/login">
@@ -97,6 +102,7 @@ export const Contenedor = (props) => {
           </Switch>
         </Router>
       </main>
+      
     </div>
   );
 };
