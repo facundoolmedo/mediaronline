@@ -68,6 +68,10 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: 30,
     paddingRight: 30,
   },
+  menu: {
+    marginRight: theme.spacing(1),
+    height: "auto",
+  },
   logButton: {
     height: 50,
     paddingTop: "20px",
@@ -86,7 +90,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: "#FFFFFF",
   },
   logo: {
-    width: 250,
+    height: 40,
     cursor: "pointer",
   },
 }));
@@ -103,7 +107,7 @@ export default function HideAppBar(props) {
             <Hidden mdUp>
               <IconButton
                 edge="start"
-                className={classes.menuButton}
+                className={classes.menu}
                 color="primary"
                 aria-label="menu"
                 onClick={() => props.accionAbrir()}
@@ -112,7 +116,6 @@ export default function HideAppBar(props) {
               </IconButton>
             </Hidden>
             <Typography
-              variant="body1"
               className={classes.title}
               onClick={() => scroll.scrollToTop()}
             >

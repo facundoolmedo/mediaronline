@@ -38,6 +38,7 @@ const estilos = makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   content: {
     flexGrow: 1,
+    // position:"relative",
     backgroundColor: theme.palette.background.default,
   },
   mt: {

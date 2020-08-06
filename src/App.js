@@ -13,7 +13,7 @@ import {
 
 function App() {
   return ( 
-    <ThemeProvider theme = {theme}> 
+    <ThemeProvider theme = {theme} > 
     < Contenedor/>
     </ThemeProvider>
   );

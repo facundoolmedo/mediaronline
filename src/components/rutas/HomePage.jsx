@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
-import { Button, Container } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 // import DeleteIcon from "@material-ui/icons/Delete";
 import { makeStyles } from "@material-ui/core/styles";
 // import { Link } from "react-scroll";
 import Banner from "../Banner.jsx";
-// import Banner2 from "../Banner2.jsx";
-import Banner3 from "../Banner3.jsx";
+import Banner2 from "../Banner2.jsx";
+// import Banner3 from "../Banner3.jsx";
 // import Banner4 from "../Banner4.jsx";
 
 const useStyle = makeStyles({
@@ -32,20 +32,13 @@ const Home = () => {
     <Fragment>
       <Container maxWidth="xl" className={classes.cont}>
         <Banner titulo="Centro de Mediación y Formación en Resolución de Conflictos" />
-        {/* <Banner2 /> */}
-        <Banner3 />
-        {/* <Banner4 /> */}
-        <Banner titulo="Centro de Mediación y Formación en Resolución de Conflictos" />
-        {/* <Banner2 /> */}
-        <Banner3 />
-        <Banner titulo="Centro de Mediación y Formación en Resolución de Conflictos" />
-        {/* <Banner2 /> */}
-        <Banner3 />
-        <section id="section1">
+
+        <Banner2 />
+        {/* <section id="section1">
           <Button variant="contained" color="secondary">
             Scroll to Top
           </Button>
-        </section>
+        </section>  */}
       </Container>
     </Fragment>
   );

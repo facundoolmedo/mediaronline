@@ -7,7 +7,8 @@ import Image from "../static/picture20.jpeg";
 const useStyle = makeStyles({
   banner: {
     height: "auto",
-    maxWidth: "100%",
+    width: "100%",
+    display: "flex",
     backgroundImage: `url(${Image})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
