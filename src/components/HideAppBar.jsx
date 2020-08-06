@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  firsButton:{
+  firsButton: {
     marginLeft: theme.spacing(4),
     marginRight: theme.spacing(2),
     height: 70,
@@ -69,8 +69,7 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 30,
   },
   logButton: {
-    marginRight: theme.spacing(3),
-    height: 70,
+    height: 50,
     paddingTop: "20px",
     paddingBottom: "20px",
   },
@@ -82,8 +81,6 @@ const useStyles = makeStyles((theme) => ({
   appBar: {
     width: "calc(100% - 60px)",
     height: "auto",
-    paddingTop: "5px",
-    paddingBottom: "5px",
     marginTop: 15,
     marginRight: 30,
     backgroundColor: "#FFFFFF",
@@ -126,7 +123,7 @@ export default function HideAppBar(props) {
                 onClick={() => scroll.scrollToTop()}
               />
             </Typography>
-            
+
             <Hidden smDown>
               <Button
                 href="/"

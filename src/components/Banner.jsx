@@ -15,16 +15,13 @@ const useStyle = makeStyles({
     // backgroundColor: "#266A64",
     textAlign: "center",
   },
-  logo: {
-    color:"#ffc107",
-  },
   titulo: {
-    width:"auto",
-    backgroundColor:'rgba(3, 3, 3, 0.5)',
+    width: "auto",
+    margin: 20,
+    backgroundColor: "rgba(3, 3, 3, 0.4)",
     // backgroundColor:"#333333",
-    maxWidth:600,
-    padding:30,
-    marginLeft:30,
+    maxWidth: 600,
+    padding: 35,
   },
 });
 
@@ -33,16 +30,20 @@ const Banner = (props) => {
 
   return (
     <Fragment>
-      <Box className={classes.banner} pb={20} pt={25} px={5}>
-        {/* <Typography variant="h1" color="secondary">
-          {props.titulo}</Typography> */}
-
+      <Box
+        className={classes.banner}
+        pb={12}
+        pt={25}
+        px={5}
+        display="flex"
+        justifyContent="flex-end"
+      >
         <Box className={classes.titulo}>
-          <Typography variant="h4" color="secondary" >
-            {props.titulo}</Typography>
+          <Typography variant="h4" color="secondary">
+            {props.titulo}
+          </Typography>
         </Box>
-      </Box> 
-      
+      </Box>
     </Fragment>
   );
 };

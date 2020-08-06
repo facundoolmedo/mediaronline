@@ -62,9 +62,9 @@ export const Contenedor = (props) => {
   };
   return (
     <div className={classes.cont}>
-      <Container maxWidth="xl" className={classes.bar}>
+      <Container fixed className={classes.bar}>
         <HideAppBar accionAbrir={accionAbrir} />
-        </Container>
+      </Container>
       <Hidden mdUp>
         <Drawer
           classes={{
@@ -78,7 +78,7 @@ export const Contenedor = (props) => {
           <Lista />
         </Drawer>
       </Hidden>
-      <main className={classes.content} >
+      <main className={classes.content}>
         {/* <div className={classes.toolbar} /> */}
         <Router>
           <Switch>
@@ -102,7 +102,6 @@ export const Contenedor = (props) => {
           </Switch>
         </Router>
       </main>
-      
     </div>
   );
 };
