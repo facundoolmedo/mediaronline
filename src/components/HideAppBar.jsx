@@ -53,36 +53,36 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
-    height:70,
+    height: 70,
     paddingTop: "20px",
     paddingBottom: "20px",
-    paddingLeft:30,
-    paddingRight:30,
-
+    paddingLeft: 30,
+    paddingRight: 30,
   },
   logButton: {
     marginRight: theme.spacing(3),
-    height:70,
+    height: 70,
     paddingTop: "20px",
     paddingBottom: "20px",
-
   },
   title: {
     flexGrow: 1,
-    paddingTop:5,
+    paddingTop: 5,
   },
   offset: theme.mixins.toolbar,
   appBar: {
+    width: "calc(100% - 60px)",
     height: "auto",
     paddingTop: "5px",
     paddingBottom: "5px",
-    marginTop:15,
+    marginTop: 15,
+    marginRight: 30,
     backgroundColor: "#FFFFFF",
   },
-  logo:{
-    width:250,
+  logo: {
+    width: 250,
     cursor: "pointer",
-  }
+  },
 }));
 
 export default function HideAppBar(props) {
@@ -92,11 +92,7 @@ export default function HideAppBar(props) {
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar
-          position="static"
-          className={classes.appBar}
-          color="primary"
-        >
+        <AppBar position="fixed" className={classes.appBar} color="primary">
           <Toolbar>
             <Hidden smUp>
               <IconButton
@@ -109,13 +105,18 @@ export default function HideAppBar(props) {
                 <MenuIcon />
               </IconButton>
             </Hidden>
-            
+
             <Typography
               variant="body1"
               className={classes.title}
               onClick={() => scroll.scrollToTop()}
             >
-              <img className={classes.logo} src={logo} alt="logo" onClick={() => scroll.scrollToTop()}/>
+              <img
+                className={classes.logo}
+                src={logo}
+                alt="logo"
+                onClick={() => scroll.scrollToTop()}
+              />
             </Typography>
 
             <Hidden xsDown>

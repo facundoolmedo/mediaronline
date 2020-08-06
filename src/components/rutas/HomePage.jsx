@@ -35,12 +35,17 @@ const Home = () => {
         {/* <Banner2 /> */}
         <Banner3 />
         {/* <Banner4 /> */}
-
-      <section id="section1">
-        <Button variant="contained" color="secondary">
-          Scroll to Top
-        </Button>
-      </section>
+        <Banner titulo="Centro de Mediación y Formación en Resolución de Conflictos" />
+        {/* <Banner2 /> */}
+        <Banner3 />
+        <Banner titulo="Centro de Mediación y Formación en Resolución de Conflictos" />
+        {/* <Banner2 /> */}
+        <Banner3 />
+        <section id="section1">
+          <Button variant="contained" color="secondary">
+            Scroll to Top
+          </Button>
+        </section>
       </Container>
     </Fragment>
   );
