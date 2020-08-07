@@ -15,7 +15,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from "@material-ui/icons/Menu";
 // import { Hidden, Drawer } from "@material-ui/core";
-import { animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll, Link } from "react-scroll";
 import logo from "../static/logov4.png";
 
 // import Lista from "./Lista.jsx";
@@ -27,7 +27,9 @@ function HideOnScroll(props) {
   // Note that you normally won't need to set the window ref as useScrollTrigger
   // will default to window.
   // This is only being set here because the demo is in an iframe.
-  const trigger = useScrollTrigger({ target: window ? window() : undefined });
+  const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
+  });
 
   return (
     <Slide appear={false} direction="down" in={!trigger}>
@@ -69,14 +71,14 @@ const useStyles = makeStyles((theme) => ({
   menu: {
     marginRight: theme.spacing(1),
     height: "auto",
-    marginTop: 20,
-    marginBottom: 20,
+    marginTop: 10,
+    marginBottom: 10,
   },
   logButton: {
     height: "auto",
     marginLeft: 20,
-    paddingTop: "20px",
-    paddingBottom: "20px",
+    paddingTop: "15px",
+    paddingBottom: "15px",
   },
   title: {
     flexGrow: 1,
@@ -127,7 +129,6 @@ export default function HideAppBar(props) {
                 onClick={() => scroll.scrollToTop()}
               />
             </Typography>
-
             <Hidden smDown>
               <Button
                 href="/"
@@ -137,22 +138,38 @@ export default function HideAppBar(props) {
               >
                 Inicio
               </Button>
-              <Button
-                href="/mediar"
-                color="primary"
-                size="large"
-                className={classes.menuButton}
+              <Link
+                activeClass="active"
+                to="equipo"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1700}
               >
-                Mediación
-              </Button>
-              <Button
-                href="/cursos"
-                color="primary"
-                size="large"
-                className={classes.menuButton}
+                <Button
+                  color="primary"
+                  size="large"
+                  className={classes.menuButton}
+                >
+                  Equipo
+                </Button>
+              </Link>
+              <Link
+                activeClass="active"
+                to="contacto"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1700}
               >
-                Cursos
-              </Button>
+                <Button
+                  color="primary"
+                  size="large"
+                  className={classes.menuButton}
+                >
+                  Contacto
+                </Button>
+              </Link>
               <Button
                 href="/login"
                 color="primary"

@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { makeStyles, Typography, Box } from "@material-ui/core";
+import { makeStyles, Typography, Box, Grid } from "@material-ui/core";
 
 const useStyle = makeStyles({
   banner: {
@@ -40,6 +40,18 @@ const Banner3 = () => {
         >
           Centro de Mediacion y Formación en Resolución de Conflictos
         </Typography>
+
+        <Grid container>
+          <Grid item>
+            <Box border={2}>dbfd</Box>
+          </Grid>
+          <Grid item>
+            <Box border={2}>dbfd</Box>
+          </Grid>
+          <Grid item>
+            <Box border={2}>dbfd</Box>
+          </Grid>
+        </Grid>
       </Box>
     </Fragment>
   );

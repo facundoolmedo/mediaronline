@@ -1,14 +1,13 @@
 import React, { Fragment } from "react";
-import { makeStyles, Typography, Box } from "@material-ui/core";
+import { makeStyles, Box } from "@material-ui/core";
+import MediaCard from "./BtnMediar.jsx";
 
 const useStyle = makeStyles({
   banner: {
     height: "auto",
     width: "auto",
-    backgroundColor: "#98D9D7",
+    backgroundColor: "rgba(255, 255, 255, 0.4)",
   },
-  tittle1: {},
-  text1: {},
 });
 
 const Banner2 = () => {
@@ -25,16 +24,10 @@ const Banner2 = () => {
         position="relative"
         top={-40}
         mx={10}
-        py={10}
+        p={0}
         boxShadow={20}
       >
-        <Typography
-          variant="h4"
-          color="textSecondary"
-          className={classes.text1}
-        >
-          Buttons
-        </Typography>
+        <MediaCard />
       </Box>
     </Fragment>
   );

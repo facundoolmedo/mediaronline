@@ -6,7 +6,7 @@ import React, { Fragment } from "react";
 
 //Custom Components
 // import Banner5 from "../Banner5.jsx";
-import Banner4 from "../Banner4.jsx";
+import Banner5 from "../Banner5.jsx";
 
 // FUNCTIONS
 // const useStyle = makeStyles({
@@ -21,7 +21,7 @@ const Cursos = (props) => {
 
   return (
     <Fragment>
-      <Banner4 titulo="Cursos" />
+      <Banner5 titulo="Formación" />
     </Fragment>
   );
 };

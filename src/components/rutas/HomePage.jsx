@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { Container } from "@material-ui/core";
 // import DeleteIcon from "@material-ui/icons/Delete";
 import { makeStyles } from "@material-ui/core/styles";
-// import { Link } from "react-scroll";
+
 import Banner from "../Banner.jsx";
 import Banner2 from "../Banner2.jsx";
 import Banner3 from "../Banner3.jsx";
@@ -36,11 +36,20 @@ const Home = () => {
         <Banner2 />
         <Banner3 />
         <Banner4 />
-        {/* <section id="section1">
-          <Button variant="contained" color="secondary">
-            Scroll to Top
-          </Button>
-        </section>  */}
+        <section id="equipo">
+          <Banner3 />
+        </section>
+        <Banner3 />
+        <Banner4 />
+        <Banner3 />
+        <Banner4 />
+        <section id="contacto">
+          <Banner4 />
+        </section>
+        <Banner3 />
+        <Banner4 />
+        <Banner3 />
+        <Banner4 />
       </Container>
     </Fragment>
   );
