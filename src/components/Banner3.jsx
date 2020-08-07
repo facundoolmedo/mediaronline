@@ -42,13 +42,13 @@ const Banner3 = () => {
         </Typography>
 
         <Grid container>
-          <Grid item>
+          <Grid item xs={4}>
             <Box border={2}>dbfd</Box>
           </Grid>
-          <Grid item>
+          <Grid item xs={4}>
             <Box border={2}>dbfd</Box>
           </Grid>
-          <Grid item>
+          <Grid item xs={4}>
             <Box border={2}>dbfd</Box>
           </Grid>
         </Grid>
