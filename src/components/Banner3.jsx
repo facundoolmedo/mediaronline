@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { makeStyles, Typography, Box, Grid } from "@material-ui/core";
+import { makeStyles, Box, Grid } from "@material-ui/core";
 
 const useStyle = makeStyles({
   banner: {
@@ -26,30 +26,16 @@ const Banner3 = () => {
         p={2}
         textAlign="center"
       >
-        <Typography
-          variant="h2"
-          color="textPrimary"
-          className={classes.tittle1}
-        >
-          Quienes somos?
-        </Typography>
-        <Typography
-          variant="h4"
-          color="textSecondary"
-          className={classes.text1}
-        >
-          Centro de Mediacion y Formación en Resolución de Conflictos
-        </Typography>
-
         <Grid container>
-          <Grid item xs={4}>
-            <Box border={2}>dbfd</Box>
+          <Grid item xs={12} md={6} lg={6}>
+            <Box boxShadow={3} m={5} py={10}>
+              Adriana
+            </Box>
           </Grid>
-          <Grid item xs={4}>
-            <Box border={2}>dbfd</Box>
-          </Grid>
-          <Grid item xs={4}>
-            <Box border={2}>dbfd</Box>
+          <Grid item xs={12} md={6} lg={6}>
+            <Box boxShadow={3} m={5} py={10}>
+              Teresita
+            </Box>
           </Grid>
         </Grid>
       </Box>

@@ -14,9 +14,11 @@ import HideAppBar from "./HideAppBar.jsx";
 //Material Ui trash
 import { makeStyles, Container } from "@material-ui/core";
 
-import { Drawer } from "@material-ui/core";
+import { Drawer, Box } from "@material-ui/core";
 import Hidden from "@material-ui/core/Hidden";
 import Lista from "./Lista.jsx";
+import Fab from "@material-ui/core/Fab";
+import ArrowBackIcon from "@material-ui/icons/ArrowBack";
 
 const drawerWidth = 300;
 
@@ -63,9 +65,6 @@ export const Contenedor = (props) => {
   };
   return (
     <div className={classes.cont}>
-      <Container fixed className={classes.bar}>
-        <HideAppBar accionAbrir={accionAbrir} />
-      </Container>
       <Hidden mdUp>
         <Drawer
           classes={{
@@ -84,9 +83,31 @@ export const Contenedor = (props) => {
         <Router>
           <Switch>
             <Route path="/mediar">
+              <Box className={classes.bar} mt={4} ml={4}>
+                <Fab
+                  color="secondary"
+                  size="large"
+                  aria-label="add"
+                  className={classes.volver}
+                  href="/"
+                >
+                  <ArrowBackIcon />
+                </Fab>
+              </Box>
               <Mediar />
             </Route>
             <Route path="/cursos">
+              <Box className={classes.bar} mt={4} ml={4}>
+                <Fab
+                  color="secondary"
+                  size="large"
+                  aria-label="add"
+                  className={classes.volver}
+                  href="/"
+                >
+                  <ArrowBackIcon />
+                </Fab>
+              </Box>
               <Cursos />
             </Route>
             <Route path="/login">
@@ -98,6 +119,9 @@ export const Contenedor = (props) => {
               <Signup />
             </Route>
             <Route path="/" exact>
+              <Container fixed className={classes.bar}>
+                <HideAppBar accionAbrir={accionAbrir} />
+              </Container>
               <Home />
             </Route>
           </Switch>
