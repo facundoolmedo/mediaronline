@@ -1,24 +1,24 @@
 import React, { Fragment } from "react";
 
-import { makeStyles, Box, Typography } from "@material-ui/core";
-import Image from "../static/picture5.jpg";
+import { makeStyles, Box, Grid, Typography } from "@material-ui/core";
+import Image from "../static/mapita.jpeg";
+
+//-31.4174763,-64.1957373  - Coordenadas del Centro
 
 const useStyle = makeStyles({
   banner: {
-    height: "600px",
-    maxWidth: "100%",
+    height: "500px",
     backgroundImage: `url(${Image})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
-    // backgroundColor: "#969696",
-    textAlign: "center",
   },
-  titulo: {
-    fontSize: "2rem",
-    fontFamily: "arial",
-    textAlign: "center",
-    color: "#DEDEDE",
+  contacto: {
+    height: "500px",
+  },
+
+  cont: {
+    backgroundColor: "#969696",
   },
 });
 
@@ -27,10 +27,24 @@ const Banner = (props) => {
 
   return (
     <Fragment>
-      <Box className={classes.banner} mb={20} pt={25} px={15}>
-        <Typography variant="h2" color="secondary">
-          {props.titulo}
-        </Typography>
+      <Box>
+        <Grid container>
+          <Grid item xs={12} md={6}>
+            <Box textAlign="center" className={classes.banner}></Box>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Box
+              boxShadow={10}
+              p={7}
+              className={classes.contacto}
+              textAlign="left"
+            >
+              <Typography variant="h3" color="primary">
+                Contacto
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
       </Box>
     </Fragment>
   );

@@ -23,7 +23,7 @@ const Banner2 = () => {
         justifyContent="center"
         position="relative"
         top={-40}
-        mx={10}
+        mx={3}
         boxShadow={20}
       >
         <MediaCard />

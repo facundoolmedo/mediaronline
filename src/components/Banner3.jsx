@@ -15,14 +15,14 @@ const useStyle = makeStyles({
     marginTop: 30,
   },
   imagen: {
-    height: 400,
+    height: 350,
     backgroundImage: `url(${Image})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
   },
   imagen2: {
-    height: 400,
+    height: 350,
     backgroundImage: `url(${Image2})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
@@ -38,7 +38,7 @@ const Banner3 = () => {
 
   return (
     <Fragment>
-      <Box className={classes.banner} id="banner2" p={2} textAlign="center">
+      <Box className={classes.banner} id="banner2" p={0} textAlign="center">
         <Grid container>
           <Grid item xs={12} md={6}>
             <Box m={5}>
@@ -46,14 +46,14 @@ const Banner3 = () => {
               <Box
                 boxShadow={5}
                 mx={2}
-                pb={10}
-                pt={5}
-                px={5}
+                pb={3}
+                pt={3}
+                px={7}
                 position="relative"
                 top={-20}
                 className={classes.tit}
               >
-                <Typography variant="h5" color="primary" paragraph>
+                <Typography variant="h5" color="primary" gutterBottom>
                   Teresita Macovaz
                 </Typography>
                 <Typography variant="body1" color="textSecondary" paragraph>
@@ -73,23 +73,33 @@ const Banner3 = () => {
               <Box
                 boxShadow={5}
                 mx={2}
-                pb={10}
-                pt={5}
-                px={5}
+                pb={3}
+                pt={3}
+                px={7}
                 position="relative"
                 top={-20}
                 className={classes.tit}
               >
-                <Typography variant="h5" color="primary" paragraph>
+                <Typography
+                  variant="h5"
+                  color="primary"
+                  align="center"
+                  gutterBottom
+                >
                   Adriana Farfan
                 </Typography>
-                <Typography variant="body1" color="textSecondary" paragraph>
+                <Typography
+                  variant="body1"
+                  color="textSecondary"
+                  align="center"
+                  paragraph
+                >
                   Mediadora y Abogada
                 </Typography>
                 <Typography variant="body1" color="textPrimary" align="justify">
                   Me desempeño como mediadora en el Centro Judicial de
                   Mediación, con especialidad en mediaciones civiles y
-                  familiares. Formación en Mediación Escolar.
+                  familiares y formación en Mediación Escolar.
                 </Typography>
               </Box>
             </Box>
