@@ -24,7 +24,6 @@ const Banner2 = () => {
         position="relative"
         top={-40}
         mx={10}
-        p={0}
         boxShadow={20}
       >
         <MediaCard />
