@@ -5,7 +5,7 @@ import Image from "../static/picture5.jpg";
 
 const useStyle = makeStyles({
   banner: {
-    height: "auto",
+    height: "600px",
     maxWidth: "100%",
     backgroundImage: `url(${Image})`,
     backgroundRepeat: "no-repeat",
@@ -27,7 +27,7 @@ const Banner = (props) => {
 
   return (
     <Fragment>
-      <Box className={classes.banner} pb={4} pt={25} px={15}>
+      <Box className={classes.banner} mb={20} pt={25} px={15}>
         <Typography variant="h2" color="secondary">
           {props.titulo}
         </Typography>

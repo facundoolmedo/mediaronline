@@ -40,17 +40,17 @@ const Lista = () => {
           <ListItemIcon>
             <MenuBookIcon color="secondary" />
           </ListItemIcon>
-          <ListItemText primary="Mediar" />
+          <ListItemText primary="Mediación" />
         </ListItem>
         <Divider className={classes.dividerColor} />
         <ListItem button component="a" href="/cursos">
           <ListItemIcon>
             <LaptopIcon color="secondary" />
           </ListItemIcon>
-          <ListItemText primary="Cursos" />
+          <ListItemText primary="Formación" />
         </ListItem>
         <Divider className={classes.dividerColor} />
-        <ListItem button component="a" href="/login">
+        <ListItem button component="a">
           <ListItemIcon>
             <ExitToAppIcon color="secondary" />
           </ListItemIcon>

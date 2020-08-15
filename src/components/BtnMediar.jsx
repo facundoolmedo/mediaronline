@@ -115,7 +115,7 @@ export default function ButtonBases() {
             color="inherit"
             className={classes.imageTitle}
           >
-            Mediación
+            MEDIACIÓN
             <span className={classes.imageMarked} />
           </Typography>
         </span>
@@ -139,7 +139,7 @@ export default function ButtonBases() {
             color="inherit"
             className={classes.imageTitle}
           >
-            Formación
+            FORMACIÓN
             <span className={classes.imageMarked} />
           </Typography>
         </span>
