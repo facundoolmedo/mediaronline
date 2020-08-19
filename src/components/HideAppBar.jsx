@@ -89,7 +89,7 @@ const useStyles = makeStyles((theme) => ({
     width: "calc(100% - 60px)",
     height: "auto",
     marginTop: 20,
-    marginRight: 20,
+    marginRight: 30,
     backgroundColor: "#FFFFFF",
   },
   logo: {
@@ -104,85 +104,85 @@ export default function HideAppBar(props) {
   return (
     <React.Fragment>
       <CssBaseline />
-      {/* <HideOnScroll {...props}> */}
-      <AppBar position="fixed" className={classes.appBar} color="primary">
-        <Toolbar>
-          <Hidden mdUp>
-            <IconButton
-              edge="start"
-              className={classes.menu}
-              color="primary"
-              aria-label="menu"
-              onClick={() => props.accionAbrir()}
-            >
-              <MenuIcon />
-            </IconButton>
-          </Hidden>
-          <Typography
-            className={classes.title}
-            onClick={() => scroll.scrollToTop()}
-          >
-            <img
-              className={classes.logo}
-              src={logo}
-              alt="logo"
-              onClick={() => scroll.scrollToTop()}
-            />
-          </Typography>
-          <Hidden smDown>
-            <Button
-              color="primary"
-              size="large"
-              className={classes.firsButton}
+      <HideOnScroll {...props}>
+        <AppBar position="fixed" className={classes.appBar} color="primary">
+          <Toolbar>
+            <Hidden mdUp>
+              <IconButton
+                edge="start"
+                className={classes.menu}
+                color="primary"
+                aria-label="menu"
+                onClick={() => props.accionAbrir()}
+              >
+                <MenuIcon />
+              </IconButton>
+            </Hidden>
+            <Typography
+              className={classes.title}
               onClick={() => scroll.scrollToTop()}
             >
-              Inicio
-            </Button>
-            <Link
-              activeClass="active"
-              to="equipo"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={1700}
-            >
+              <img
+                className={classes.logo}
+                src={logo}
+                alt="logo"
+                onClick={() => scroll.scrollToTop()}
+              />
+            </Typography>
+            <Hidden smDown>
               <Button
                 color="primary"
                 size="large"
-                className={classes.menuButton}
+                className={classes.firsButton}
+                onClick={() => scroll.scrollToTop()}
               >
-                Equipo
+                Inicio
               </Button>
-            </Link>
-            <Link
-              activeClass="active"
-              to="contacto"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={1700}
-            >
+              <Link
+                activeClass="active"
+                to="equipo"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1700}
+              >
+                <Button
+                  color="primary"
+                  size="large"
+                  className={classes.menuButton}
+                >
+                  Equipo
+                </Button>
+              </Link>
+              <Link
+                activeClass="active"
+                to="contacto"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={1700}
+              >
+                <Button
+                  color="primary"
+                  size="large"
+                  className={classes.menuButton}
+                >
+                  Contacto
+                </Button>
+              </Link>
               <Button
+                // href="/login"
                 color="primary"
                 size="large"
-                className={classes.menuButton}
+                className={classes.logButton}
+                variant="outlined"
               >
-                Contacto
+                Login
               </Button>
-            </Link>
-            <Button
-              // href="/login"
-              color="primary"
-              size="large"
-              className={classes.logButton}
-              variant="outlined"
-            >
-              Login
-            </Button>
-          </Hidden>
-        </Toolbar>
-      </AppBar>
-      {/* </HideOnScroll> */}
+            </Hidden>
+          </Toolbar>
+        </AppBar>
+      </HideOnScroll>
     </React.Fragment>
   );
 }

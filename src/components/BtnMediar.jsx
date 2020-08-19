@@ -10,11 +10,14 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexWrap: "wrap",
     minWidth: 300,
+    background: "#DEDEDE",
+    padding: "5px",
     width: "100%",
   },
   image: {
     position: "relative",
     height: 150,
+
     [theme.breakpoints.down("xs")]: {
       width: "100% !important", // Overrides inline-style
       height: 100,

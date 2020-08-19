@@ -22,7 +22,7 @@ const Banner2 = () => {
         display="flex"
         justifyContent="center"
         position="relative"
-        top={-40}
+        top={-80}
         mx={3}
         boxShadow={20}
       >
