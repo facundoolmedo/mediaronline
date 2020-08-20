@@ -16,7 +16,7 @@ export const Mision = () => {
         <Box
           boxShadow={-10}
           pt={10}
-          pb={10}
+          pb={7}
           mb={5}
           display="flex"
           justifyContent="center"

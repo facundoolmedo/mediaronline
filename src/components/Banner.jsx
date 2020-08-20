@@ -15,15 +15,13 @@ const useStyle = makeStyles({
     backgroundSize: "cover",
     backgroundPosition: "center",
     // backgroundColor: "#266A64",
-    textAlign: "left",
+    textAlign: "center",
   },
   titulo: {
     width: "auto",
-    margin: 30,
     backgroundColor: "rgba(3, 3, 3, 0.5)",
     // backgroundColor:"#333333",
     maxWidth: 600,
-    padding: 45,
   },
 });
 
@@ -36,12 +34,12 @@ const Banner = (props) => {
         className={classes.banner}
         pb={10}
         pt={24}
-        px={5}
+        // px={5}
         display="flex"
         justifyContent="flex-start"
       >
         <ScrollAnimation animateIn="fadeInLeft" duration={1}>
-          <Box className={classes.titulo}>
+          <Box className={classes.titulo} py={7} mx={5} px={2}>
             <Typography variant="h4" color="secondary">
               {props.titulo}
             </Typography>

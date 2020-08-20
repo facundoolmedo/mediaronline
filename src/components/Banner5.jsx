@@ -17,7 +17,7 @@ const useStyle = makeStyles({
     textAlign: "center",
   },
   titulo: {
-    fontSize: "2rem",
+    fontSize: "3rem",
     fontFamily: "arial",
     textAlign: "center",
     color: "#DEDEDE",
@@ -29,7 +29,7 @@ const Banner = (props) => {
 
   return (
     <Fragment>
-      <Box className={classes.banner} pb={4} pt={11} px={1}>
+      <Box className={classes.banner} pb={4} pt={11} px={1} boxShadow={5}>
         <Typography variant="h2" color="secondary">
           {props.titulo}
         </Typography>

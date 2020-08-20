@@ -17,14 +17,14 @@ const useStyle = makeStyles({
     marginTop: 30,
   },
   imagen: {
-    height: 350,
+    height: 300,
     backgroundImage: `url(${Image})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
     backgroundPosition: "center",
   },
   imagen2: {
-    height: 350,
+    height: 300,
     backgroundImage: `url(${Image2})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
@@ -47,19 +47,20 @@ const Banner3 = () => {
         py={6}
         px={1}
       >
-        <Grid container style={{ flexGrow: 1 }} justify="center">
-          <Grid item xs={12} md={6} justify="center">
+        <Grid container style={{ flexGrow: 1 }} justify="center" spacing={4}>
+          <Grid item xs={12} md={6} lg={5} justify="center">
             <ScrollAnimation animateIn="fadeInLeftBig" duration={1}>
               <Box display="flex" justifyContent="center">
-                <Box width={0.7}>
+                <Box maxWidth="600px" mx={1}>
                   <Box className={classes.imagen2}></Box>
                   <Box
                     boxShadow={5}
-                    mx={2}
+                    mx={0}
                     pb={3}
                     pt={3}
                     px={5}
                     position="relative"
+                    align="center"
                     top={-20}
                     className={classes.tit}
                   >
@@ -79,31 +80,33 @@ const Banner3 = () => {
                     >
                       Mediadora, Abogada, Árbitro y Formadora
                     </Typography>
-                    <Typography
-                      variant="body1"
-                      color="textPrimary"
-                      align="center"
-                    >
-                      Desde 1996 me dedico a mediar en los ámbitos judicial,
-                      público y privado, y a dictar cursos para la formación en
-                      mediación y en resolución de conflictos.
-                    </Typography>
+                    <Box maxWidth="400px">
+                      <Typography
+                        variant="body1"
+                        color="textPrimary"
+                        align="center"
+                      >
+                        Desde 1996 me dedico a mediar en los ámbitos judicial,
+                        público y privado, y a dictar cursos para la formación
+                        en mediación y en resolución de conflictos.
+                      </Typography>
+                    </Box>
                   </Box>
                 </Box>
               </Box>
             </ScrollAnimation>
           </Grid>
-          <Grid item xs={12} md={6} justify="center">
+          <Grid item xs={12} md={6} lg={5} justify="center">
             <ScrollAnimation animateIn="fadeInRightBig" duration={1}>
               <Box display="flex" justifyContent="center">
-                <Box width={0.7}>
+                <Box maxWidth="600px" mx={1}>
                   <Box className={classes.imagen}></Box>
                   <Box
                     boxShadow={5}
-                    mx={2}
+                    mx={0}
                     pb={3}
                     pt={3}
-                    px={6}
+                    px={5}
                     position="relative"
                     top={-20}
                     className={classes.tit}
@@ -124,16 +127,17 @@ const Banner3 = () => {
                     >
                       Mediadora y Abogada
                     </Typography>
-
-                    <Typography
-                      variant="body1"
-                      color="textPrimary"
-                      align="center"
-                    >
-                      Me desempeño como mediadora en el Centro Judicial de
-                      Mediación, con especialidad en mediaciones civiles y
-                      familiares y formación en Mediación Escolar.
-                    </Typography>
+                    <Box maxWidth="400px">
+                      <Typography
+                        variant="body1"
+                        color="textPrimary"
+                        align="center"
+                      >
+                        Me desempeño como mediadora en el Centro Judicial de
+                        Mediación, con especialidad en mediaciones civiles y
+                        familiares y formación en Mediación Escolar.
+                      </Typography>
+                    </Box>
                   </Box>
                 </Box>
               </Box>
