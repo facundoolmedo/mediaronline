@@ -12,7 +12,6 @@ const useStyle = makeStyles({
     maxWidth: "100%",
     backgroundColor: "#DEDEDE",
   },
-  tittle1: {},
   text1: {
     marginLeft: 0,
     marginTop: 30,
@@ -41,84 +40,104 @@ const Banner3 = () => {
 
   return (
     <Fragment>
-      <Box className={classes.banner} id="banner2" p={0} textAlign="center">
-        <Grid container>
-          <Grid item xs={12} md={6}>
-            <Box m={5}>
-              <ScrollAnimation animateIn="fadeInLeftBig" duration={1}>
-                <Box className={classes.imagen2}></Box>
-                <Box
-                  boxShadow={5}
-                  mx={2}
-                  pb={3}
-                  pt={3}
-                  px={7}
-                  position="relative"
-                  top={-20}
-                  className={classes.tit}
-                >
-                  <Typography variant="h5" color="primary" gutterBottom>
-                    Teresita Macovaz
-                  </Typography>
-                  <Typography variant="body1" color="textSecondary" paragraph>
-                    Mediadora, Abogada, Árbitro y Formadora
-                  </Typography>
-                  <Typography
-                    variant="body1"
-                    color="textPrimary"
-                    align="center"
+      <Box
+        className={classes.banner}
+        id="banner2"
+        textAlign="center"
+        py={6}
+        px={7}
+      >
+        <Grid container style={{ flexGrow: 1 }} justify="center">
+          <Grid item xs={12} md={6} justify="center">
+            <ScrollAnimation animateIn="fadeInLeftBig" duration={1}>
+              <Box display="flex" justifyContent="center">
+                <Box width={0.75}>
+                  <Box className={classes.imagen2}></Box>
+                  <Box
+                    boxShadow={5}
+                    mx={2}
+                    pb={3}
+                    pt={3}
+                    px={5}
+                    position="relative"
+                    top={-20}
+                    className={classes.tit}
                   >
-                    Desde 1996 me dedico a mediar en los ámbitos judicial,
-                    público y privado, y a dictar cursos para la formación en
-                    mediación y en resolución de conflictos.
-                  </Typography>
+                    <Typography
+                      variant="h5"
+                      color="primary"
+                      align="center"
+                      gutterBottom
+                    >
+                      Teresita Macovaz
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      color="textSecondary"
+                      align="center"
+                      paragraph
+                    >
+                      Mediadora, Abogada, Árbitro y Formadora
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      color="textPrimary"
+                      align="center"
+                    >
+                      Desde 1996 me dedico a mediar en los ámbitos judicial,
+                      público y privado, y a dictar cursos para la formación en
+                      mediación y en resolución de conflictos.
+                    </Typography>
+                  </Box>
                 </Box>
-              </ScrollAnimation>
-            </Box>
+              </Box>
+            </ScrollAnimation>
           </Grid>
-          <Grid item xs={12} md={6}>
-            <Box m={5}>
-              <ScrollAnimation animateIn="fadeInRightBig" duration={1}>
-                <Box py={1} className={classes.imagen}></Box>
-                <Box
-                  boxShadow={5}
-                  mx={2}
-                  pb={3}
-                  pt={3}
-                  px={7}
-                  position="relative"
-                  top={-20}
-                  className={classes.tit}
-                >
-                  <Typography
-                    variant="h5"
-                    color="primary"
-                    align="center"
-                    gutterBottom
+          <Grid item xs={12} md={6} justify="center">
+            <ScrollAnimation animateIn="fadeInRightBig" duration={1}>
+              <Box display="flex" justifyContent="center">
+                <Box width={0.75}>
+                  <Box className={classes.imagen}></Box>
+                  <Box
+                    boxShadow={5}
+                    mx={2}
+                    pb={3}
+                    pt={3}
+                    px={7}
+                    position="relative"
+                    top={-20}
+                    className={classes.tit}
                   >
-                    Adriana Farfan
-                  </Typography>
-                  <Typography
-                    variant="body1"
-                    color="textSecondary"
-                    align="center"
-                    paragraph
-                  >
-                    Mediadora y Abogada
-                  </Typography>
+                    <Typography
+                      variant="h5"
+                      color="primary"
+                      align="center"
+                      gutterBottom
+                    >
+                      Adriana Farfan
+                    </Typography>
+                    <Typography
+                      variant="body1"
+                      color="textSecondary"
+                      align="center"
+                      paragraph
+                    >
+                      Mediadora y Abogada
+                    </Typography>
 
-                  <Typography
-                    variant="body1"
-                    color="textPrimary"
-                    align="center"
-                  >
-                    Me desempeño como mediadora en el Centro Judicial de
-                    Mediación, con especialidad en mediaciones civiles y
-                    familiares y formación en Mediación Escolar.
-                  </Typography>
+                    <Typography
+                      variant="body1"
+                      color="textPrimary"
+                      align="center"
+                    >
+                      Me desempeño como mediadora en el Centro Judicial de
+                      Mediación, con especialidad en mediaciones civiles y
+                      familiares y formación en Mediación Escolar.
+                    </Typography>
+                  </Box>
                 </Box>
-              </ScrollAnimation>
-            </Box>
+              </Box>
+            </ScrollAnimation>
           </Grid>
         </Grid>
       </Box>

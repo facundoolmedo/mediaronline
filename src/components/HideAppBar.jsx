@@ -140,10 +140,26 @@ export default function HideAppBar(props) {
             </Button>
             <Link
               activeClass="active"
+              to="mision"
+              spy={true}
+              smooth={true}
+              offset={-200}
+              duration={1700}
+            >
+              <Button
+                color="primary"
+                size="large"
+                className={classes.menuButton}
+              >
+                Misión
+              </Button>
+            </Link>
+            <Link
+              activeClass="active"
               to="equipo"
               spy={true}
               smooth={true}
-              offset={-120}
+              offset={-90}
               duration={1700}
             >
               <Button
@@ -159,7 +175,7 @@ export default function HideAppBar(props) {
               to="contacto"
               spy={true}
               smooth={true}
-              offset={-330}
+              offset={-370}
               duration={1700}
             >
               <Button
@@ -170,7 +186,7 @@ export default function HideAppBar(props) {
                 Contacto
               </Button>
             </Link>
-            <Button
+            {/* <Button
               // href="/login"
               color="primary"
               size="large"
@@ -178,7 +194,7 @@ export default function HideAppBar(props) {
               variant="outlined"
             >
               Login
-            </Button>
+            </Button> */}
           </Hidden>
         </Toolbar>
       </AppBar>

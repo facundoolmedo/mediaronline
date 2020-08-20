@@ -38,7 +38,9 @@ const Home = () => {
         <Banner titulo="Centro de Mediación y Formación en Resolución de Conflictos" />
 
         <Banner2 />
-        <Mision />
+        <section id="mision">
+          <Mision />
+        </section>
 
         <section id="equipo">
           <Banner3 />

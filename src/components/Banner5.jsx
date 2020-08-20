@@ -30,9 +30,6 @@ const Banner = (props) => {
   return (
     <Fragment>
       <Box className={classes.banner} pb={4} pt={15} px={1}>
-        {/* <Hidden mdDown>
-          <Box py={5} border={2}></Box>
-        </Hidden> */}
         <Typography variant="h2" color="secondary">
           {props.titulo}
         </Typography>

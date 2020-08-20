@@ -12,7 +12,7 @@ export const Mision = () => {
   const classes = useStyle();
   return (
     <div>
-      <ScrollAnimation animateIn="fadeIn" duration={4}>
+      <ScrollAnimation animateIn="fadeIn" duration={2}>
         <Box
           boxShadow={-10}
           pt={10}

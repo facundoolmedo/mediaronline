@@ -11,7 +11,7 @@ const Banner6 = () => {
   const classes = useStyle();
   return (
     <div>
-      <Box py={5} pl={4} className={classes.root}>
+      <Box py={2} pl={4} className={classes.root}>
         <Typography variant="textPrimary" color="primary">
           Copyright@2020 Todos los derechos Reservados
         </Typography>

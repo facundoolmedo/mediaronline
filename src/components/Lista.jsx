@@ -13,7 +13,7 @@ import {
 import HomeIcon from "@material-ui/icons/Home";
 import LaptopIcon from "@material-ui/icons/Laptop";
 import MenuBookIcon from "@material-ui/icons/MenuBook";
-import ExitToAppIcon from "@material-ui/icons/ExitToApp";
+// import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 
 const useStyle = makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
@@ -50,12 +50,12 @@ const Lista = () => {
           <ListItemText primary="Formación" />
         </ListItem>
         <Divider className={classes.dividerColor} />
-        <ListItem button component="a">
+        {/* <ListItem button component="a">
           <ListItemIcon>
             <ExitToAppIcon color="secondary" />
           </ListItemIcon>
           <ListItemText primary="Login" />
-        </ListItem>
+        </ListItem>*/}
       </List>
     </Fragment>
   );
