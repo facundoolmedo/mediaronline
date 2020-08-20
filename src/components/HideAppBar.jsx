@@ -56,15 +56,15 @@ const useStyles = makeStyles((theme) => ({
   firsButton: {
     marginLeft: theme.spacing(4),
     height: "auto",
-    paddingTop: "30px",
-    paddingBottom: "30px",
+    paddingTop: "20px",
+    paddingBottom: "20px",
     paddingLeft: 30,
     paddingRight: 30,
   },
   menuButton: {
     height: "auto",
-    paddingTop: "30px",
-    paddingBottom: "30px",
+    paddingTop: "25px",
+    paddingBottom: "25px",
     paddingLeft: 30,
     paddingRight: 30,
   },
@@ -143,7 +143,7 @@ export default function HideAppBar(props) {
               to="mision"
               spy={true}
               smooth={true}
-              offset={-200}
+              offset={-150}
               duration={1700}
             >
               <Button
@@ -159,7 +159,7 @@ export default function HideAppBar(props) {
               to="equipo"
               spy={true}
               smooth={true}
-              offset={-90}
+              offset={-45}
               duration={1700}
             >
               <Button
@@ -175,13 +175,13 @@ export default function HideAppBar(props) {
               to="contacto"
               spy={true}
               smooth={true}
-              offset={-370}
+              offset={-100}
               duration={1700}
             >
               <Button
                 color="primary"
                 size="large"
-                className={classes.menuButton}
+                className={classes.logButton}
               >
                 Contacto
               </Button>

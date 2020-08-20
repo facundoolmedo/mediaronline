@@ -34,13 +34,13 @@ const Banner = (props) => {
     <Fragment>
       <Box
         className={classes.banner}
-        pb={15}
-        pt={30}
+        pb={10}
+        pt={24}
         px={5}
         display="flex"
         justifyContent="flex-start"
       >
-        <ScrollAnimation animateIn="bounceInLeft" duration={2}>
+        <ScrollAnimation animateIn="fadeInLeft" duration={1}>
           <Box className={classes.titulo}>
             <Typography variant="h4" color="secondary">
               {props.titulo}

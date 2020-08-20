@@ -3,6 +3,8 @@ import { Container } from "@material-ui/core";
 // import DeleteIcon from "@material-ui/icons/Delete";
 import { makeStyles } from "@material-ui/core/styles";
 
+import ScrollAnimation from "react-animate-on-scroll";
+
 import Banner from "../Banner.jsx";
 import Banner2 from "../Banner2.jsx";
 import Banner3 from "../Banner3.jsx";
@@ -37,7 +39,9 @@ const Home = () => {
       <Container maxWidth="xl" className={classes.cont}>
         <Banner titulo="Centro de Mediación y Formación en Resolución de Conflictos" />
 
-        <Banner2 />
+        <ScrollAnimation animateIn="bounceIn">
+          <Banner2 />
+        </ScrollAnimation>
         <section id="mision">
           <Mision />
         </section>

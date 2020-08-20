@@ -86,7 +86,7 @@ export const Contenedor = (props) => {
               <Box className={classes.bar} mt={4} ml={4}>
                 <Fab
                   color="secondary"
-                  size="large"
+                  size="medium"
                   aria-label="add"
                   className={classes.volver}
                   href="/"
@@ -100,7 +100,7 @@ export const Contenedor = (props) => {
               <Box className={classes.bar} mt={4} ml={4}>
                 <Fab
                   color="secondary"
-                  size="large"
+                  size="medium"
                   aria-label="add"
                   className={classes.volver}
                   href="/"

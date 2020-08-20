@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
@@ -98,55 +98,57 @@ export default function ButtonBases() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      <ButtonBase
-        focusRipple
-        href="/mediar"
-        key="Mediación"
-        className={classes.image}
-        focusVisibleClassName={classes.focusVisible}
-        style={{
-          width: "50%",
-        }}
-      >
-        <span className={classes.imageSrc1} />
-        <span className={classes.imageBackdrop} />
-        <span className={classes.imageButton}>
-          <Typography
-            component="span"
-            variant="h5"
-            color="inherit"
-            className={classes.imageTitle}
-          >
-            MEDIACIÓN
-            <span className={classes.imageMarked} />
-          </Typography>
-        </span>
-      </ButtonBase>
-      <ButtonBase
-        focusRipple
-        href="/cursos"
-        key="Formacion"
-        className={classes.image}
-        focusVisibleClassName={classes.focusVisible}
-        style={{
-          width: "50%",
-        }}
-      >
-        <span className={classes.imageSrc2} />
-        <span className={classes.imageBackdrop} />
-        <span className={classes.imageButton}>
-          <Typography
-            component="span"
-            variant="h5"
-            color="inherit"
-            className={classes.imageTitle}
-          >
-            FORMACIÓN
-            <span className={classes.imageMarked} />
-          </Typography>
-        </span>
-      </ButtonBase>
-    </div>
+    <Fragment>
+      <div className={classes.root}>
+        <ButtonBase
+          focusRipple
+          href="/mediar"
+          key="Mediación"
+          className={classes.image}
+          focusVisibleClassName={classes.focusVisible}
+          style={{
+            width: "50%",
+          }}
+        >
+          <span className={classes.imageSrc1} />
+          <span className={classes.imageBackdrop} />
+          <span className={classes.imageButton}>
+            <Typography
+              component="span"
+              variant="h5"
+              color="inherit"
+              className={classes.imageTitle}
+            >
+              MEDIACIÓN
+              <span className={classes.imageMarked} />
+            </Typography>
+          </span>
+        </ButtonBase>
+        <ButtonBase
+          focusRipple
+          href="/cursos"
+          key="Formacion"
+          className={classes.image}
+          focusVisibleClassName={classes.focusVisible}
+          style={{
+            width: "50%",
+          }}
+        >
+          <span className={classes.imageSrc2} />
+          <span className={classes.imageBackdrop} />
+          <span className={classes.imageButton}>
+            <Typography
+              component="span"
+              variant="h5"
+              color="inherit"
+              className={classes.imageTitle}
+            >
+              FORMACIÓN
+              <span className={classes.imageMarked} />
+            </Typography>
+          </span>
+        </ButtonBase>
+      </div>
+    </Fragment>
   );
 }

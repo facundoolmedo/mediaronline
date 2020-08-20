@@ -103,7 +103,7 @@ const Banner3 = () => {
                     mx={2}
                     pb={3}
                     pt={3}
-                    px={7}
+                    px={6}
                     position="relative"
                     top={-20}
                     className={classes.tit}

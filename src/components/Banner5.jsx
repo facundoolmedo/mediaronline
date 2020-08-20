@@ -29,7 +29,7 @@ const Banner = (props) => {
 
   return (
     <Fragment>
-      <Box className={classes.banner} pb={4} pt={15} px={1}>
+      <Box className={classes.banner} pb={4} pt={11} px={1}>
         <Typography variant="h2" color="secondary">
           {props.titulo}
         </Typography>
