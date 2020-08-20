@@ -45,13 +45,13 @@ const Banner3 = () => {
         id="banner2"
         textAlign="center"
         py={6}
-        px={7}
+        px={1}
       >
         <Grid container style={{ flexGrow: 1 }} justify="center">
           <Grid item xs={12} md={6} justify="center">
             <ScrollAnimation animateIn="fadeInLeftBig" duration={1}>
               <Box display="flex" justifyContent="center">
-                <Box width={0.75}>
+                <Box width={0.7}>
                   <Box className={classes.imagen2}></Box>
                   <Box
                     boxShadow={5}
@@ -96,7 +96,7 @@ const Banner3 = () => {
           <Grid item xs={12} md={6} justify="center">
             <ScrollAnimation animateIn="fadeInRightBig" duration={1}>
               <Box display="flex" justifyContent="center">
-                <Box width={0.75}>
+                <Box width={0.7}>
                   <Box className={classes.imagen}></Box>
                   <Box
                     boxShadow={5}

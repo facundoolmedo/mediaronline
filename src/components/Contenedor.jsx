@@ -41,7 +41,7 @@ const estilos = makeStyles((theme) => ({
   content: {
     flexGrow: 1,
     // position:"relative",
-    backgroundColor: theme.palette.background.default,
+    backgroundColor: theme.palette.background.primary,
   },
   mt: {
     marginTop: 20,
