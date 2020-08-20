@@ -13,7 +13,7 @@ const useStyle = makeStyles({
     // backgroundRepeat: "no-repeat",
     // backgroundSize: "cover",
     // backgroundPosition: "center",
-    backgroundColor: "#969696",
+    backgroundColor: "#837B72",
     textAlign: "center",
   },
   titulo: {
@@ -29,7 +29,10 @@ const Banner = (props) => {
 
   return (
     <Fragment>
-      <Box className={classes.banner} pb={4} pt={20} px={15}>
+      <Box className={classes.banner} pb={4} pt={15} px={1}>
+        {/* <Hidden mdDown>
+          <Box py={5} border={2}></Box>
+        </Hidden> */}
         <Typography variant="h2" color="secondary">
           {props.titulo}
         </Typography>

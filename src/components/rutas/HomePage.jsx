@@ -7,6 +7,9 @@ import Banner from "../Banner.jsx";
 import Banner2 from "../Banner2.jsx";
 import Banner3 from "../Banner3.jsx";
 import Banner4 from "../Banner4.jsx";
+import Banner6 from "../Banner6.jsx";
+
+import { Mision } from "../Mision.jsx";
 
 const useStyle = makeStyles({
   root: {
@@ -22,6 +25,7 @@ const useStyle = makeStyles({
   },
   cont: {
     padding: 0,
+    background: "#837B72",
   },
 });
 
@@ -34,6 +38,7 @@ const Home = () => {
         <Banner titulo="Centro de Mediación y Formación en Resolución de Conflictos" />
 
         <Banner2 />
+        <Mision />
 
         <section id="equipo">
           <Banner3 />
@@ -42,6 +47,7 @@ const Home = () => {
         <section id="contacto">
           <Banner4 />
         </section>
+        <Banner6 />
       </Container>
     </Fragment>
   );

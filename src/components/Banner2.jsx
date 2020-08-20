@@ -6,7 +6,7 @@ const useStyle = makeStyles({
   banner: {
     height: "auto",
     width: "auto",
-    backgroundColor: "rgba(255, 255, 255, 0.4)",
+    background: "#91E1DC",
   },
 });
 
@@ -22,9 +22,9 @@ const Banner2 = () => {
         display="flex"
         justifyContent="center"
         position="relative"
-        top={-80}
+        top={-40}
         mx={3}
-        boxShadow={20}
+        boxShadow={10}
       >
         <MediaCard />
       </Box>

@@ -3,6 +3,7 @@ import React, { Fragment } from "react";
 import { makeStyles, Box, Typography } from "@material-ui/core";
 import Image from "../static/picture20.jpeg";
 // import { Link } from "react-scroll";
+import ScrollAnimation from "react-animate-on-scroll";
 
 const useStyle = makeStyles({
   banner: {
@@ -22,7 +23,7 @@ const useStyle = makeStyles({
     backgroundColor: "rgba(3, 3, 3, 0.5)",
     // backgroundColor:"#333333",
     maxWidth: 600,
-    padding: 35,
+    padding: 45,
   },
 });
 
@@ -34,16 +35,18 @@ const Banner = (props) => {
       <Box
         className={classes.banner}
         pb={15}
-        pt={25}
+        pt={30}
         px={5}
         display="flex"
         justifyContent="flex-start"
       >
-        <Box className={classes.titulo}>
-          <Typography variant="h4" color="secondary">
-            {props.titulo}
-          </Typography>
-        </Box>
+        <ScrollAnimation animateIn="bounceInLeft" duration={2}>
+          <Box className={classes.titulo}>
+            <Typography variant="h4" color="secondary">
+              {props.titulo}
+            </Typography>
+          </Box>
+        </ScrollAnimation>
       </Box>
     </Fragment>
   );

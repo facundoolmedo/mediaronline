@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: "wrap",
     minWidth: 300,
     background: "#DEDEDE",
-    padding: "5px",
+    padding: "1px",
     width: "100%",
   },
   image: {
