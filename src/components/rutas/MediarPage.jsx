@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 // MaterialUI Staff
 // import Typography from "@material-ui/core/Typography";
-import { makeStyles, Grid, Typography } from "@material-ui/core";
+import { makeStyles, Grid, Typography, Link } from "@material-ui/core";
 
 //Custom Components
 import Banner5 from "../Banner5.jsx";
@@ -24,7 +24,13 @@ const useStyle = makeStyles({
     color: "#A29078",
   },
   a: {
-    color: "#5C9AEF",
+    color: "#598383",
+    paddingLeft: 5,
+    paddingRight: 5,
+    marginLeft: 5,
+    marginRight: 5,
+    backgroundColor: "#E4DED7",
+    textDecoration: "none",
   },
   p: {
     color: "#EFA15C",
@@ -43,7 +49,7 @@ const Mediar = (props) => {
           <Box
             boxShadow={5}
             py={7}
-            px={7}
+            px={2}
             m={2}
             textAlign="left"
             // className={classes.root}
@@ -52,51 +58,51 @@ const Mediar = (props) => {
               <Typography variant="h4" className={classes.titulo}>
                 Mediación Prejudicial Obligatoria
               </Typography>
-              <Box pl={3} pt={4} pr={3}>
-                <Typography variant="h5" className={classes.texto}>
-                  1 Completar el siguiente
-                  <a href="/" className={classes.a}>
-                    formulario
-                  </a>
-                  con las firmas de las partes y de los abogados intervinientes
-                  sea con firma digital o no.
-                </Typography>
-              </Box>
-              <Box pl={3} pt={4} pr={3}>
-                <Typography variant="h5" className={classes.texto}>
-                  2 Junto al formulario de solicitud adjuntar la siguiente
-                  documentación:
-                </Typography>
-              </Box>
-              <Box pl={7} pt={4} pr={5}>
-                <Typography variant="h6" className={classes.texto}>
-                  - Copia de anverso y reverso de la Matricula Profesional
-                  del/los abogado/s.
-                </Typography>
-                <Typography variant="h6" className={classes.texto}>
-                  - Copia de anverso y reverso de Documento Nacional de
-                  Identidad (DNI) del/los requirente/s.
-                </Typography>
-                <Typography variant="h6" className={classes.texto}>
-                  - Copia de anverso y reverso de Documento Nacional de
-                  Identidad (DNI) del/los abogado/s.
-                </Typography>
-                <Typography variant="h6" className={classes.texto}>
-                  - Copia del Poder General o Especial para actuar en el proceso
-                  de mediación del/los abogado/s previamente juramentado, si el
-                  solicitante es una Persona Jurídica.
-                </Typography>
-              </Box>
-              <Box pl={3} pt={4} pr={5}>
-                <Typography variant="h5" className={classes.texto}>
-                  3 Enviar la solicitud y documentación a nuestro correo
-                  electrónico
-                  <span className={classes.p}>info@macovazfarfan.com.ar</span> y
-                  al del Centro Público de Mediación
-                  <span className={classes.p}>mediacionvirtual@cba.gov.ar</span>
-                  para su procesamiento.
-                </Typography>
-              </Box>
+            </Box>
+            <Box pl={3} pt={4} pr={3}>
+              <Typography variant="h5" className={classes.texto}>
+                1 Completar la siguiente
+                <Link href="/" className={classes.a}>
+                  solicitud
+                </Link>
+                con las firmas de las partes y de los abogados intervinientes
+                sea con firma digital o no.
+              </Typography>
+            </Box>
+            <Box pl={3} pt={4} pr={3}>
+              <Typography variant="h5" className={classes.texto}>
+                2 Junto al formulario de solicitud adjuntar la siguiente
+                documentación:
+              </Typography>
+            </Box>
+            <Box pl={7} pt={4} pr={5}>
+              <Typography variant="h6" className={classes.texto}>
+                - Copia de anverso y reverso de la Matricula Profesional del/los
+                abogado/s.
+              </Typography>
+              <Typography variant="h6" className={classes.texto}>
+                - Copia de anverso y reverso de Documento Nacional de Identidad
+                (DNI) del/los requirente/s.
+              </Typography>
+              <Typography variant="h6" className={classes.texto}>
+                - Copia de anverso y reverso de Documento Nacional de Identidad
+                (DNI) del/los abogado/s.
+              </Typography>
+              <Typography variant="h6" className={classes.texto}>
+                - Copia del Poder General o Especial para actuar en el proceso
+                de mediación del/los abogado/s previamente juramentado, si el
+                solicitante es una Persona Jurídica.
+              </Typography>
+            </Box>
+            <Box pl={3} pt={4} pr={5}>
+              <Typography variant="h5" className={classes.texto}>
+                3 Enviar la solicitud y documentación a nuestro correo
+                electrónico
+                <span className={classes.p}>info@macovazfarfan.com.ar</span> y
+                al del Centro Público de Mediación
+                <span className={classes.p}>mediacionvirtual@cba.gov.ar</span>
+                para su procesamiento.
+              </Typography>
             </Box>
           </Box>
         </Grid>
