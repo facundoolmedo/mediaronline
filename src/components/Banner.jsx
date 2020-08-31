@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 import { makeStyles, Box, Typography } from "@material-ui/core";
-import Image from "../static/picture21.jpeg";
+import Image from "../static/picture24.jpg";
 // import { Link } from "react-scroll";
 import ScrollAnimation from "react-animate-on-scroll";
 
