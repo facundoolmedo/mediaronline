@@ -94,7 +94,7 @@ const Mediar = (props) => {
                 align="justify"
                 className={classes.texto}
               >
-                1 Completar la siguiente solicitud con las firmas de las partes
+                1) Completar la siguiente solicitud con las firmas de las partes
                 y de los abogados intervinientes sea con firma digital o no.
               </Typography>
             </Box>
@@ -111,7 +111,7 @@ const Mediar = (props) => {
                 align="justify"
                 className={classes.texto}
               >
-                2 Junto al formulario de solicitud adjuntar la siguiente
+                2) Junto al formulario de solicitud adjuntar la siguiente
                 documentación:
               </Typography>
             </Box>
@@ -150,23 +150,23 @@ const Mediar = (props) => {
                 solicitante es una Persona Jurídica.
               </Typography>
             </Box>
-            <Box pl={3} pt={4} pr={5}>
+            <Box pl={3} pt={4} pr={3}>
               <Typography
                 variant="h5"
                 align="justify"
                 className={classes.texto}
               >
-                3 Enviar la solicitud y la documentación escaneada a nuestro
+                3) Enviar la solicitud y la documentación escaneada a nuestro
                 correo electrónico y al del Centro Público de Mediación para su
                 procesamiento.
               </Typography>
             </Box>
-            <Box pl={3} pt={4} ml={5}>
+            <Box pt={4} ml={3}>
               <Typography variant="h6" className={classes.texto2}>
-                info@macovazfarfan.com.ar
+                - info@macovazfarfan.com.ar
               </Typography>
               <Typography variant="h6" className={classes.texto2}>
-                mediacionvirtual@cba.gov.ar
+                - mediacionvirtual@cba.gov.ar
               </Typography>
             </Box>
           </Box>
