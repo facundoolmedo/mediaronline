@@ -32,8 +32,8 @@ const Banner = (props) => {
     <Fragment>
       <Box
         className={classes.banner}
-        pb={10}
-        pt={24}
+        pb={13}
+        pt={26}
         // px={5}
         display="flex"
         justifyContent="flex-start"
