@@ -48,7 +48,7 @@ const Banner3 = () => {
         px={1}
       >
         <Grid container style={{ flexGrow: 1 }} justify="center" spacing={4}>
-          <Grid item xs={12} md={6} lg={5} justify="center">
+          <Grid item xs={12} md={6} lg={5}>
             <ScrollAnimation animateIn="fadeInLeftBig" duration={1}>
               <Box display="flex" justifyContent="center">
                 <Box maxWidth="600px" mx={1}>
@@ -96,7 +96,7 @@ const Banner3 = () => {
               </Box>
             </ScrollAnimation>
           </Grid>
-          <Grid item xs={12} md={6} lg={5} justify="center">
+          <Grid item xs={12} md={6} lg={5}>
             <ScrollAnimation animateIn="fadeInRightBig" duration={1}>
               <Box display="flex" justifyContent="center">
                 <Box maxWidth="600px" mx={1}>

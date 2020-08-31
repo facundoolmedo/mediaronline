@@ -24,12 +24,9 @@ export const Mision = () => {
         >
           <Box width={0.7}>
             <Typography variant="h4" color="secondary" align="center">
-              " Nos dedicamos a solucionar conflictos Nos dedicamos a solucionar
+              Somos profesionales en la resolución de conflictos solucionar
               conflictos Nos dedicamos a solucionar conflictos Nos dedicamos a
-              solucionar conflictos Nos dedicamos a solucionar conflictos Nos
-              dedicamos a solucionar conflictos Nos dedicamos a solucionar
-              conflictos Nos dedicamos a solucionar conflictos Nos dedicamos a
-              solucionar conflictos "
+              solucionar conflictos Nos dedicamos a solucionar conflictos.
             </Typography>
           </Box>
         </Box>

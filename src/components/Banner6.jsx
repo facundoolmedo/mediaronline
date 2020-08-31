@@ -12,7 +12,7 @@ const Banner6 = () => {
   return (
     <div>
       <Box py={2} pl={4} className={classes.root}>
-        <Typography variant="textPrimary" color="primary">
+        <Typography variant="subtitle2" color="primary">
           Copyright@2020 Todos los derechos Reservados
         </Typography>
       </Box>
