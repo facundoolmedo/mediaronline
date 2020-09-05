@@ -100,7 +100,10 @@ const Mediar = (props) => {
             </Box>
             <Box mt={2} ml={8} mr={3} align="left">
               <Typography variant="h6">
-                <Link href="/" className={classes.texto2}>
+                <Link
+                  href="https://drive.google.com/uc?export=download&id=1Td6F3htFZZv3gvtlnCUDyTMJHN2WXWPh"
+                  className={classes.texto2}
+                >
                   Formulario de solicitud de mediación
                 </Link>
               </Typography>
