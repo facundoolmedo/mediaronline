@@ -4,7 +4,8 @@ import ScrollAnimation from "react-animate-on-scroll";
 
 const useStyle = makeStyles({
   root: {
-    background: "#837B72",
+    background: "#393835",
+    // background: "#837B72",
   },
 });
 
@@ -24,9 +25,10 @@ export const Mision = () => {
         >
           <Box width={0.7}>
             <Typography variant="h4" color="secondary" align="center">
-              Somos profesionales en la resolución de conflictos solucionar
-              conflictos Nos dedicamos a solucionar conflictos Nos dedicamos a
-              solucionar conflictos Nos dedicamos a solucionar conflictos.
+              Somos profesionales en la resolución de conflictos y nuestro
+              compromiso está centrado en prestar servicios de mediación de
+              excelencia ofreciendo un espacio de diálogo, trabajo y
+              capacitación.
             </Typography>
           </Box>
         </Box>

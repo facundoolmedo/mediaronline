@@ -11,14 +11,29 @@ import { Box } from "@material-ui/core";
 // FUNCTIONS
 const useStyle = makeStyles({
   tips: {
-    background: "#FFBCAD",
-    borderLeft: "6px solid #C2C2C2",
+    background: "#FFC9A2",
+    borderLeft: "6px solid #E58037",
+    // borderStyle: "solid",
+    // borderWidth: 2,
+    // borderColor: "#FF522A",
+  },
+  // tips: {
+  //   background: "#B5F1D9",
+  //   borderLeft: "6px solid #679F89",
+  //   // borderStyle: "solid",
+  //   // borderWidth: 2,
+  //   // borderColor: "#FF522A",
+  // },
+  aclaracion: {
+    background: "#FFFBF3",
+    padding: 20,
     // borderStyle: "solid",
     // borderWidth: 2,
     // borderColor: "#FF522A",
   },
   tipstext: {
-    color: "#CE5A5A",
+    // color: "#679F89",
+    color: "#E58037",
   },
   titulo: {
     color: "#F9A635",
@@ -52,7 +67,7 @@ const Mediar = (props) => {
       <Banner5 titulo="Mediación" />
       <Grid container justify="center">
         {/* Advertencias */}
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12}>
           <Grid item>
             <Box
               boxShadow={5}
@@ -64,8 +79,13 @@ const Mediar = (props) => {
               p={3}
               className={classes.tips}
             >
-              <Typography variant="h6" className={classes.tipstext}>
-                La solicitud solo puede puede ser tramitada por un\a abogado\a
+              <Typography
+                variant="h6"
+                className={classes.tipstext}
+                align="left"
+              >
+                La solicitud solo puede puede ser tramitada por un profesional
+                abogado
               </Typography>
             </Box>
           </Grid>
@@ -74,7 +94,7 @@ const Mediar = (props) => {
 
         {/* Main */}
 
-        <Grid item xs={12} md={9}>
+        <Grid item xs={12}>
           <Box
             boxShadow={5}
             py={7}
@@ -101,10 +121,34 @@ const Mediar = (props) => {
             <Box mt={2} ml={8} mr={3} align="left">
               <Typography variant="h6">
                 <Link
-                  href="https://drive.google.com/uc?export=download&id=1Td6F3htFZZv3gvtlnCUDyTMJHN2WXWPh"
+                  href="https://drive.google.com/uc?export=download&id=123rh-84ualAq6RU55-bjc-JFEkeMiWrV"
                   className={classes.texto2}
                 >
-                  Formulario de solicitud de mediación
+                  Descargar Formulario de Solicitud de Mediación
+                </Link>
+              </Typography>
+            </Box>
+            <Box
+              mt={2}
+              ml={8}
+              mr={3}
+              align="left"
+              className={classes.aclaracion}
+            >
+              <Typography
+                variant="h6"
+                align="justify"
+                className={classes.texto}
+              >
+                * Si hay más de un requirente o requerido se deberá adicionar el
+                anexo para participantes adicionales
+              </Typography>
+              <Typography variant="h6">
+                <Link
+                  href="https://drive.google.com/uc?export=download&id=1P78eUC_VfLNirodzBOgu88YexVjRfsDU"
+                  className={classes.texto2}
+                >
+                  Descargar Anexo Participantes Adicionales
                 </Link>
               </Typography>
             </Box>
@@ -164,17 +208,86 @@ const Mediar = (props) => {
                 procesamiento.
               </Typography>
             </Box>
-            <Box pt={4} ml={3}>
+            <Box pt={4} ml={5}>
               <Typography variant="h6" className={classes.texto2}>
-                - info@macovazfarfan.com.ar
+                macovazfarfan@gmail.com
               </Typography>
               <Typography variant="h6" className={classes.texto2}>
-                - mediacionvirtual@cba.gov.ar
+                mediacionvirtual@cba.gov.ar
+              </Typography>
+            </Box>
+            <Box pl={3} pt={4} pr={3}>
+              <Typography
+                variant="h5"
+                align="justify"
+                className={classes.texto}
+              >
+                4) Macovaz&Farfan diligenciará las notificaciones pertinentes a
+                las partes y terceros citados, con día y hora de audiencia
+                indicando la plataforma electrónica a utilizar. Las
+                notificaciones serán diligenciadas por medio de la Oficina de
+                Notificadores y Ujieres del Poder Judicial si los domicilios
+                correspondireren a la ciudad de Córdoba. En caso de que los
+                domicilios estuvieran fuera de la ciudad de Córdoba se
+                realizarán por correo siendo los costos de notificación a cargo
+                del requirente.
               </Typography>
             </Box>
           </Box>
         </Grid>
         {/* end Main */}
+        <Grid xs={12}>
+          <Box
+            boxShadow={5}
+            // borderColor="red"
+            // borderRadius={5}
+            // border={2}
+            mx={2}
+            p={3}
+            className={classes.tips}
+          >
+            <Typography variant="h6" className={classes.tipstext} align="left">
+              El requirente deberá aportar todos los datos necesarios a fin de
+              una notificación eficaz (Correo electrónico y Números de
+              Teléfonos).
+            </Typography>
+          </Box>
+        </Grid>
+        {/* Main */}
+
+        <Grid item xs={12}>
+          <Box
+            boxShadow={5}
+            py={7}
+            px={2}
+            m={2}
+            textAlign="left"
+            // className={classes.root}
+          >
+            <Box pl={2}>
+              <Typography variant="h4" className={classes.titulo}>
+                Mediación Extrajudicial Voluntaria
+              </Typography>
+            </Box>
+            <Box pl={3} pt={4} pr={3}>
+              <Typography
+                variant="h5"
+                align="justify"
+                className={classes.texto}
+              >
+                Para todos aquellos requerimientos de una o más personas
+                involucradas en un conflicto donde la mediación sea el proceso
+                más adecuado y oportuno en tiempo y lugar facilitando el diálogo
+                en busca de una solución satisfactoria para ambas partes.
+              </Typography>
+            </Box>
+            <Box pt={4} ml={4}>
+              <Typography variant="h6" className={classes.texto2}>
+                Contactarse con nuestro Centro
+              </Typography>
+            </Box>
+          </Box>
+        </Grid>
       </Grid>
     </Fragment>
   );

@@ -16,7 +16,8 @@ import { Mision } from "../Mision.jsx";
 const useStyle = makeStyles({
   cont: {
     padding: 0,
-    background: "#837B72",
+    // background: "#837B72",
+    background: "#393835",
   },
 });
 
