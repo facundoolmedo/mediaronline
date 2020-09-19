@@ -8,6 +8,8 @@ import { makeStyles, Grid, Typography, Link } from "@material-ui/core";
 import Banner5 from "../Banner5.jsx";
 import { Box } from "@material-ui/core";
 
+// import Icon1 from "../../static/icon1.svg";
+
 // FUNCTIONS
 const useStyle = makeStyles({
   tips: {
@@ -109,6 +111,7 @@ const Mediar = (props) => {
               </Typography>
             </Box>
             <Box pl={3} pt={4} pr={3}>
+              {/* <SvgIcon component={Icon1} viewBox="0 0 600 476.6" /> */}
               <Typography
                 variant="h5"
                 align="justify"
