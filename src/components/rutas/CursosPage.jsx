@@ -1,3 +1,4 @@
+import { Box, Grid } from "@material-ui/core";
 import React, { Fragment } from "react";
 
 // MaterialUI Staff
@@ -22,6 +23,14 @@ const Cursos = (props) => {
   return (
     <Fragment>
       <Banner5 titulo="Formación" />
+
+      <Grid container justify="center">
+        <Grid item xs={12} md={10}>
+          <Box boxShadow={3} mt={5} textAlign="center" py={15}>
+            Holi
+          </Box>
+        </Grid>
+      </Grid>
     </Fragment>
   );
 };
