@@ -89,7 +89,7 @@ const Banner = (props) => {
                             color="secondary"
                             gutterBottom
                           >
-                            info@macovazfarfan.com.ar
+                            macovazfarfan@gmail.com
                           </Typography>
                         </Box>
                       </Grid>

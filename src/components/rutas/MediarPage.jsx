@@ -35,7 +35,7 @@ const useStyle = makeStyles({
   },
   tipstext: {
     // color: "#679F89",
-    color: "#E58037",
+    color: "#757575",
   },
   titulo: {
     color: "#F9A635",
@@ -286,7 +286,7 @@ const Mediar = (props) => {
             </Box>
             <Box pt={4} ml={4}>
               <Typography variant="h6" className={classes.texto2}>
-                Contactarse con nuestro Centro
+                Contactarse con nuestro Centro a macovazfarfan@gmail.com
               </Typography>
             </Box>
           </Box>
