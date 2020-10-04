@@ -13,7 +13,7 @@ const useStyle = makeStyles({
     // backgroundRepeat: "no-repeat",
     // backgroundSize: "cover",
     // backgroundPosition: "center",
-    backgroundColor: "#837B72",
+    backgroundColor: "#393835",
     textAlign: "center",
   },
   titulo: {

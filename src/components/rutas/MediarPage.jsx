@@ -46,6 +46,9 @@ const useStyle = makeStyles({
   texto2: {
     color: "#EFA15C",
   },
+  texto3: {
+    color: "#388950",
+  },
   a: {
     color: "#598383",
     // paddingLeft: 5,
@@ -86,7 +89,7 @@ const Mediar = (props) => {
                 className={classes.tipstext}
                 align="left"
               >
-                La solicitud solo puede puede ser tramitada por un profesional
+                La solicitud sólo puede puede ser tramitada por un profesional
                 abogado
               </Typography>
             </Box>
@@ -125,7 +128,7 @@ const Mediar = (props) => {
               <Typography variant="h6">
                 <Link
                   href="https://drive.google.com/uc?export=download&id=123rh-84ualAq6RU55-bjc-JFEkeMiWrV"
-                  className={classes.texto2}
+                  className={classes.texto3}
                 >
                   Descargar Formulario de Solicitud de Mediación
                 </Link>
@@ -149,7 +152,7 @@ const Mediar = (props) => {
               <Typography variant="h6">
                 <Link
                   href="https://drive.google.com/uc?export=download&id=1P78eUC_VfLNirodzBOgu88YexVjRfsDU"
-                  className={classes.texto2}
+                  className={classes.texto3}
                 >
                   Descargar Anexo Participantes Adicionales
                 </Link>
@@ -286,7 +289,10 @@ const Mediar = (props) => {
             </Box>
             <Box pt={4} ml={4}>
               <Typography variant="h6" className={classes.texto2}>
-                Contactarse con nuestro Centro a macovazfarfan@gmail.com
+                Contactarse con nuestro Centro
+              </Typography>
+              <Typography variant="h6" className={classes.texto3}>
+                macovazfarfan@gmail.com
               </Typography>
             </Box>
           </Box>

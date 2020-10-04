@@ -213,7 +213,7 @@ const Cursos = () => {
             </ListItem>
             <ListItem textAlign="justify">
               <Typography variant="body1">
-                Analizar formularios propio del proceso y diferenciar su uso
+                Analizar formularios propios del proceso y diferenciar su uso
                 conforme los distintos ámbitos de inicio de la mediación
                 prejudicial obligatoria.
               </Typography>
