@@ -135,7 +135,7 @@ const Banner3 = () => {
                       >
                         Me desempeño como mediadora en el Centro Judicial de
                         Mediación, con especialidad en mediaciones civiles y
-                        familiares y formación en Mediación Escolar.
+                        familiares.
                       </Typography>
                     </Box>
                   </Box>
