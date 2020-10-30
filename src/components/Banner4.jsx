@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 import { makeStyles, Box, Grid, Typography } from "@material-ui/core";
-import Image from "../static/mapita.jpeg";
+import Image from "../static/maps2.jpeg";
 
 import CallIcon from "@material-ui/icons/Call";
 import EmailIcon from "@material-ui/icons/Email";
@@ -38,21 +38,22 @@ const Banner = (props) => {
           </Grid>
           <Grid item xs={12} md={6}>
             <Box
-              pb={14}
+              pb={10}
               boxShadow={10}
               pl={10}
-              pt={12}
+              pt={7}
               display="flex"
               justifyContent="center"
               className={classes.contacto}
             >
-              {/* <Box mb={2}>
-                <Typography variant="h3" color="secondary">
+              
+
+              <Box pl={0} pt={1}>
+              <Box mb={5} textAlign="left">
+                <Typography variant="h4" color="secondary">
                   Contacto
                 </Typography>
-              </Box> */}
-
-              <Box pl={0} pt={4}>
+              </Box>
                 <Grid container>
                   <Grid item xs={12} sm={2}>
                     <Box pr={3} pt={2} pb={3}>

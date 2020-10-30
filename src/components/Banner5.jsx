@@ -14,6 +14,7 @@ const useStyle = makeStyles({
     // backgroundSize: "cover",
     // backgroundPosition: "center",
     backgroundColor: "#393835",
+    //#393835
     textAlign: "center",
   },
   titulo: {

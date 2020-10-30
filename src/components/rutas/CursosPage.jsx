@@ -47,10 +47,10 @@ const useStyle = makeStyles({
     opacity: 0.2,
   },
   tag1: {
-    backgroundColor: "#FFC9A2",
+    backgroundColor: "#16A085",
   },
   txt1: {
-    color: "#757575",
+    color: "#FFFFFF",
   },
   txt2: {
     color: "#E49025",
@@ -95,7 +95,7 @@ const Cursos = () => {
                 </Grid>
                 <Grid item xs={12} lg={7}>
                   <Grid container xs={12} justify="center" alignItems="center">
-                    <Grid item xs={12}>
+                    {/* <Grid item xs={12}>
                       <Box
                         py={2}
                         px={4}
@@ -106,7 +106,7 @@ const Cursos = () => {
                           Duración: 10 hs Homologadas por la DIME
                         </Typography>
                       </Box>
-                    </Grid>
+                    </Grid> */}
 
                     <Grid
                       container
@@ -115,7 +115,7 @@ const Cursos = () => {
                       justify="center"
                     >
                       <Grid item xs={11}>
-                        <Box pt={4} px={0} textAlign="center">
+                        <Box pt={7} px={0} textAlign="center">
                           <Typography variant="h3">
                             Procedimiento de Mediación en Córdoba
                           </Typography>
@@ -208,7 +208,7 @@ const Cursos = () => {
               <Typography variant="body1">
                 Brindar a los profesionales mediadores y abogados un análisis
                 del procedimiento de la mediación en Córdoba, generando un
-                espacio de resolución de dudas y consultas.
+                espacio de aprendizaje y reflexión..
               </Typography>
             </ListItem>
             <ListItem textAlign="justify">

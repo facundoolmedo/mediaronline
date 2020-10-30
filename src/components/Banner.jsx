@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 import { makeStyles, Box, Typography } from "@material-ui/core";
-import Image from "../static/centro2.jpeg";
+import Image from "../static/centro4.jpeg";
 // import { Link } from "react-scroll";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -13,7 +13,7 @@ const useStyle = makeStyles({
     backgroundImage: `url(${Image})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    backgroundPosition: "bottom",
+    backgroundPosition: "center",
     // backgroundColor: "#266A64",
     textAlign: "center",
   },
@@ -22,6 +22,9 @@ const useStyle = makeStyles({
     backgroundColor: "rgba(3, 3, 3, 0.5)",
     // backgroundColor:"#333333",
     maxWidth: 600,
+  },
+  subt:{
+    color: "#DEDEDE"
   },
 });
 
@@ -39,11 +42,18 @@ const Banner = (props) => {
         justifyContent="flex-start"
       >
         <ScrollAnimation animateIn="fadeInLeft" duration={1}>
-          <Box className={classes.titulo} py={7} mx={5} px={2}>
+          <Box className={classes.titulo} pt={7} pb={4} mx={5} px={2}>
             <Typography variant="h4" color="secondary">
               {props.titulo}
             </Typography>
+            <Box>
+            <Typography variant="body" className={classes.subt}>
+              Habilitación por Resolucion N°084/2020 por DIME
+            </Typography>
           </Box>
+          </Box>
+          
+          
         </ScrollAnimation>
       </Box>
     </Fragment>

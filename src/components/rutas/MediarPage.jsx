@@ -13,7 +13,7 @@ import { Box } from "@material-ui/core";
 // FUNCTIONS
 const useStyle = makeStyles({
   tips: {
-    background: "#FFC9A2",
+    background: "#16A085",
     borderLeft: "6px solid #E58037",
     // borderStyle: "solid",
     // borderWidth: 2,
@@ -35,19 +35,20 @@ const useStyle = makeStyles({
   },
   tipstext: {
     // color: "#679F89",
-    color: "#757575",
+    color: "#FFFFFF",
   },
   titulo: {
-    color: "#F9A635",
+    color: "#D35400",
   },
   texto: {
-    color: "#A29078",
+    color: "#566573",
   },
   texto2: {
-    color: "#EFA15C",
+    color: "#D35400",
   },
   texto3: {
-    color: "#388950",
+    color: "#16A085",
+    textDecoration: "underline",
   },
   a: {
     color: "#598383",
