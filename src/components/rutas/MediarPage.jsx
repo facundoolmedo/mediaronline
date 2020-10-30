@@ -2,13 +2,11 @@ import React, { Fragment } from "react";
 
 // MaterialUI Staff
 // import Typography from "@material-ui/core/Typography";
-import { makeStyles, Grid, Typography, Link } from "@material-ui/core";
+import { makeStyles, Grid, Typography, Link, Avatar } from "@material-ui/core";
 
 //Custom Components
 import Banner5 from "../Banner5.jsx";
 import { Box } from "@material-ui/core";
-
-// import Icon1 from "../../static/icon1.svg";
 
 // FUNCTIONS
 const useStyle = makeStyles({
@@ -62,6 +60,10 @@ const useStyle = makeStyles({
   doc: {
     background: "#F1F1F1",
   },
+  icon1:{
+    width: 60,
+    height: 60,
+  },
 });
 
 // MAIN
@@ -114,16 +116,19 @@ const Mediar = (props) => {
                 Mediación Prejudicial Obligatoria
               </Typography>
             </Box>
-            <Box pl={3} pt={4} pr={3}>
-              {/* <SvgIcon component={Icon1} viewBox="0 0 600 476.6" /> */}
-              <Typography
-                variant="h5"
-                align="justify"
-                className={classes.texto}
-              >
-                1) Completar la siguiente solicitud con las firmas de las partes
-                y de los abogados intervinientes sea con firma digital o no.
-              </Typography>
+            <Box pt={4} pl={3} pr={3} display="flex" position="relative"> 
+              <Grid container>
+                <Grid item xs={12}>
+                  <Typography
+                    variant="h5"
+                    align="justify"
+                    className={classes.texto}
+                  >
+                    1) Completar la siguiente solicitud con las firmas de las partes
+                    y de los abogados intervinientes sea con firma digital o no.
+                </Typography>
+                </Grid>
+              </Grid>
             </Box>
             <Box mt={2} ml={8} mr={3} align="left">
               <Typography variant="h6">
