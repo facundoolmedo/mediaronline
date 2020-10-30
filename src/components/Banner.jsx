@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 import { makeStyles, Box, Typography } from "@material-ui/core";
-import Image from "../static/centro4.jpeg";
+import Image from "../static/centro6.jpeg";
 // import { Link } from "react-scroll";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -13,7 +13,7 @@ const useStyle = makeStyles({
     backgroundImage: `url(${Image})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
-    backgroundPosition: "center",
+    backgroundPosition: "bottom",
     // backgroundColor: "#266A64",
     textAlign: "center",
   },
