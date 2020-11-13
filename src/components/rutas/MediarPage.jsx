@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 // MaterialUI Staff
 // import Typography from "@material-ui/core/Typography";
-import { makeStyles, Grid, Typography, Link, Avatar } from "@material-ui/core";
+import { makeStyles, Grid, Typography, Link } from "@material-ui/core";
 
 //Custom Components
 import Banner5 from "../Banner5.jsx";
@@ -60,7 +60,7 @@ const useStyle = makeStyles({
   doc: {
     background: "#F1F1F1",
   },
-  icon1:{
+  icon1: {
     width: 60,
     height: 60,
   },
@@ -116,7 +116,7 @@ const Mediar = (props) => {
                 Mediación Prejudicial Obligatoria
               </Typography>
             </Box>
-            <Box pt={4} pl={3} pr={3} display="flex" position="relative"> 
+            <Box pt={4} pl={3} pr={3} display="flex" position="relative">
               <Grid container>
                 <Grid item xs={12}>
                   <Typography
@@ -124,9 +124,10 @@ const Mediar = (props) => {
                     align="justify"
                     className={classes.texto}
                   >
-                    1) Completar la siguiente solicitud con las firmas de las partes
-                    y de los abogados intervinientes sea con firma digital o no.
-                </Typography>
+                    1) Completar la siguiente solicitud con las firmas de las
+                    partes y de los abogados intervinientes sea con firma
+                    digital o no.
+                  </Typography>
                 </Grid>
               </Grid>
             </Box>
@@ -136,7 +137,7 @@ const Mediar = (props) => {
                   href="https://drive.google.com/uc?export=download&id=123rh-84ualAq6RU55-bjc-JFEkeMiWrV"
                   className={classes.texto3}
                 >
-                  Descargar Formulario de Solicitud de Mediación
+                  Click aqui para descargar Formulario de Solicitud de Mediación
                 </Link>
               </Typography>
             </Box>
@@ -160,7 +161,7 @@ const Mediar = (props) => {
                   href="https://drive.google.com/uc?export=download&id=1P78eUC_VfLNirodzBOgu88YexVjRfsDU"
                   className={classes.texto3}
                 >
-                  Descargar Anexo Participantes Adicionales
+                  Click aqui para descargar Anexo Participantes Adicionales
                 </Link>
               </Typography>
             </Box>
@@ -225,7 +226,7 @@ const Mediar = (props) => {
                 macovazfarfan@gmail.com
               </Typography>
               <Typography variant="h6" className={classes.texto2}>
-                mediacionvirtual@cba.gov.ar
+                solicitudescentropublico@gmail.com
               </Typography>
             </Box>
             <Box pl={3} pt={4} pr={3}>
