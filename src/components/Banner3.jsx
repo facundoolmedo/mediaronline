@@ -3,8 +3,8 @@ import { makeStyles, Box, Grid, Typography } from "@material-ui/core";
 
 import ScrollAnimation from "react-animate-on-scroll";
 
-import Image from "../static/adriana2.jpeg";
-import Image2 from "../static/teresita3.jpeg";
+import Image from "../static/adriana2-min.jpeg";
+import Image2 from "../static/teresita3-min.jpeg";
 
 const useStyle = makeStyles({
   banner: {

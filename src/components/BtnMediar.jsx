@@ -2,8 +2,8 @@ import React, { Fragment } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import ButtonBase from "@material-ui/core/ButtonBase";
 import Typography from "@material-ui/core/Typography";
-import Image1 from "../static/med3.jpg";
-import Image2 from "../static/picture5.jpg";
+import Image1 from "../static/med3-min.jpg";
+import Image2 from "../static/picture5-min.jpg";
 
 const useStyles = makeStyles((theme) => ({
   root: {

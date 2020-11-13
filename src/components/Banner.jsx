@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 import { makeStyles, Box, Typography } from "@material-ui/core";
-import Image from "../static/centro6.jpeg";
+import Image from "../static/centro6-min.jpeg";
 // import { Link } from "react-scroll";
 import ScrollAnimation from "react-animate-on-scroll";
 
@@ -23,8 +23,8 @@ const useStyle = makeStyles({
     // backgroundColor:"#333333",
     maxWidth: 600,
   },
-  subt:{
-    color: "#DEDEDE"
+  subt: {
+    color: "#DEDEDE",
   },
 });
 
@@ -47,13 +47,11 @@ const Banner = (props) => {
               {props.titulo}
             </Typography>
             <Box>
-            <Typography variant="body" className={classes.subt}>
-              Habilitación por Resolucion N°084/2020 por DIME
-            </Typography>
+              <Typography variant="body" className={classes.subt}>
+                Habilitación por Resolucion N°084/2020 por DIME
+              </Typography>
+            </Box>
           </Box>
-          </Box>
-          
-          
         </ScrollAnimation>
       </Box>
     </Fragment>

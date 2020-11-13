@@ -22,7 +22,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 //Custom Components
 import Banner5 from "../Banner5.jsx";
-import Img1 from "../../static/neg.jpeg";
+import Img1 from "../../static/neg-min.jpeg";
 
 // FUNCTIONS
 const useStyle = makeStyles({
