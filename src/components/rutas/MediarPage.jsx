@@ -124,9 +124,8 @@ const Mediar = (props) => {
                     align="justify"
                     className={classes.texto}
                   >
-                    1) Completar la siguiente solicitud con las firmas de las
-                    partes y de los abogados intervinientes sea con firma
-                    digital o no.
+                    1) Completar la siguiente solicitud (no requiere firmas)
+                    consignando el centro elegido Macovaz & Farfan.
                   </Typography>
                 </Grid>
               </Grid>
@@ -171,8 +170,26 @@ const Mediar = (props) => {
                 align="justify"
                 className={classes.texto}
               >
-                2) Junto al formulario de solicitud adjuntar la siguiente
-                documentación:
+                2) Enviar la solicitud a nuestro correo electrónico y al del
+                Centro Público de Mediación para su procesamiento.
+              </Typography>
+            </Box>
+            <Box pt={4} ml={5}>
+              <Typography variant="h6" className={classes.texto2}>
+                macovazfarfan@gmail.com
+              </Typography>
+              <Typography variant="h6" className={classes.texto2}>
+                solicitudescentropublico@gmail.com
+              </Typography>
+            </Box>
+            <Box pl={3} pt={4} pr={3}>
+              <Typography
+                variant="h5"
+                align="justify"
+                className={classes.texto}
+              >
+                3) Sólo al Centro Privado enviar un correo adjuntando la
+                siguiente documentación:
               </Typography>
             </Box>
             <Box ml={6} mt={3} mr={4} p={3} className={classes.doc}>
@@ -207,36 +224,26 @@ const Mediar = (props) => {
               >
                 - Copia del Poder General o Especial para actuar en el proceso
                 de mediación del/los abogado/s previamente juramentado, si el
-                solicitante es una Persona Jurídica.
+                solicitante es una persona jurídica.
+              </Typography>
+              <Typography
+                variant="h6"
+                align="justify"
+                className={classes.texto}
+              >
+                - Copia del Poder de Representación si el solicitante es una
+                persona jurídica.
               </Typography>
             </Box>
+
             <Box pl={3} pt={4} pr={3}>
               <Typography
                 variant="h5"
                 align="justify"
                 className={classes.texto}
               >
-                3) Enviar la solicitud y la documentación escaneada a nuestro
-                correo electrónico y al del Centro Público de Mediación para su
-                procesamiento.
-              </Typography>
-            </Box>
-            <Box pt={4} ml={5}>
-              <Typography variant="h6" className={classes.texto2}>
-                macovazfarfan@gmail.com
-              </Typography>
-              <Typography variant="h6" className={classes.texto2}>
-                solicitudescentropublico@gmail.com
-              </Typography>
-            </Box>
-            <Box pl={3} pt={4} pr={3}>
-              <Typography
-                variant="h5"
-                align="justify"
-                className={classes.texto}
-              >
-                4) Macovaz&Farfan diligenciará las notificaciones pertinentes a
-                las partes y terceros citados, con día y hora de audiencia
+                4) Macovaz & Farfan diligenciará las notificaciones pertinentes
+                a las partes y terceros citados, con día y hora de audiencia
                 indicando la plataforma electrónica a utilizar. Las
                 notificaciones serán diligenciadas por medio de la Oficina de
                 Notificadores y Ujieres del Poder Judicial si los domicilios
