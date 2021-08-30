@@ -133,7 +133,8 @@ const Mediar = (props) => {
             <Box mt={2} ml={8} mr={3} align="left">
               <Typography variant="h6">
                 <Link
-                  href="https://drive.google.com/uc?export=download&id=123rh-84ualAq6RU55-bjc-JFEkeMiWrV"
+                
+                  href="https://drive.google.com/uc?export=download&id=1x2jTyNtFHbf0llJQIwni3OmhafR9gnje"
                   className={classes.texto3}
                 >
                   Click aqui para descargar Formulario de Solicitud de Mediación
@@ -157,7 +158,7 @@ const Mediar = (props) => {
               </Typography>
               <Typography variant="h6">
                 <Link
-                  href="https://drive.google.com/uc?export=download&id=1P78eUC_VfLNirodzBOgu88YexVjRfsDU"
+                  href="https://drive.google.com/uc?export=download&id=13KOHA9HSfgSyOXeRlzM6DmhvELpniATC"
                   className={classes.texto3}
                 >
                   Click aqui para descargar Anexo Participantes Adicionales
