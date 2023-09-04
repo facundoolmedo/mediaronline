@@ -7,9 +7,6 @@ import { Contenedor } from "./components/Contenedor";
 //import { Contenedor } from "./components/ContenedorDrawerPermanente.jsx";
 // import CssBaseline from "@material-ui/core/CssBaseline";
 
-
-
-
 function App() {
   return (
     <ThemeProvider theme={theme}>

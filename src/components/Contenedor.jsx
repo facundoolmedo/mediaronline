@@ -1,7 +1,7 @@
 import React from "react";
 //Routes
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
+//hola
 import Home from "./rutas/HomePage";
 import Mediar from "./rutas/MediarPage";
 import Cursos from "./rutas/CursosPage";
