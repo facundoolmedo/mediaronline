@@ -4,6 +4,7 @@ import Image from "../static/centro6-min.jpeg";
 // import { Link } from "react-scroll";
 import ScrollAnimation from "react-animate-on-scroll";
 
+
 const useStyle = makeStyles({
   banner: {
     height: "auto",
